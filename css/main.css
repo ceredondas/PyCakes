@@ -6,6 +6,8 @@
    --brown-accent-color: rgba(193, 162, 141, 1);
    --footer-background-color: rgb(96, 1, 74);
    --footer-font-color: rgb(247, 246, 246);
+   --font-text: "Montserrat", sans-serif;
+   
 }
 
 * {
@@ -15,6 +17,7 @@
 
 body {
    background-color: var(--background-color);
+   font-family: var(--font-text);
 }
 
 .hero-img {
@@ -26,6 +29,14 @@ body {
 
 .icons {
    width: 10%;
+}
+
+.icons-products img {
+   width: 5%;
+}
+
+.cards-products img {
+   width: 15%;
 }
 
 footer {
