@@ -4,24 +4,28 @@
    --font-text: "Montserrat", sans-serif;
    --font-size-title: 3rem;
 
-   --title-color: rgba(60, 42, 30, 1);
+   --title-color: rgb(255, 255, 255);
+   --title-color-logo: rgba(60, 42, 30, 1);
    --subtitle-color: rgb(255, 255, 255);
+   --subtitle-color-span: rgba(60, 42, 30, 1);
 
    --background-color: rgb(247, 246, 246);
+   --background-color-nav: rgba(247, 246, 246, 0.8);
+
    --shadow-color: rgba(135, 109, 91, 0.5);
    --brown-accent-color: rgba(193, 162, 141, 1);
 
-   --button-background-color: rgba(157, 68, 146, 1);
+   --button-background-color: rgb(96, 1, 74);
    --button-font-color: rgb(255, 255, 255);
-   --button-font-size: 0.85rem;
+   --button-font-size: 0.75rem;
 
    --footer-background-color: rgb(96, 1, 74);
    --footer-font-color: rgb(247, 246, 246);
 }
 
 body {
-   /* position: absolute; */
-   margin: 1.5em;
+   position: absolute;
+   margin: 0;
    padding: 0;
    display: grid;
    grid-template-columns: 1Fr;
@@ -30,18 +34,41 @@ body {
    box-sizing: border-box;
 }
 
+.container {
+   position: relative;
+   margin: 1.5em;
+}
+
 a {
    text-decoration: none;
 }
 
+/*--------------------------------------------HEADER--------------------------------------------*/
+
 header {
-   box-sizing: border-box;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   /* margin: 0 1.5em; */
+   padding: 1em 0;
+   background-color: var(--background-color-nav);
+
    display: flex;
+   flex-direction: row;
    justify-content: space-between;
-   padding-bottom: 0.2em;
+   align-content: center;
+   z-index: 5;
+}
+
+header .logo {
+   color: var(--title-color-logo);
+   margin-left: 1.5em;
 }
 
 header i {
+   color: rgb(96, 1, 74);
+   margin-right: 1em;
    cursor: pointer;
 }
 
@@ -49,47 +76,37 @@ nav {
    display: none;
 }
 
+nav a {
+   font-size: 1.3rem;
+}
+
 .fa-circle-xmark {
    display: none;
 }
 
-/* .separador {
-   margin-top: 0.5rem;
-   overflow: hidden;
-   height: 10px;
-}
+/*-----------------------------------------FINAL HEADER-----------------------------------------*/
 
-.separador:after {
-   content: "";
-   display: block;
-   width: 100%;
-   height: 30px;
-   margin: -30px auto 0;
-   border-radius: 120px / 10px;
-   box-shadow: 0px 0px 8px var(--shadow-color);
-} */
-
-/*----------------------------Se rompe el codigo cuando lo pongo----------------------------*/
+/*-----------------------------------------MAIN:HERO-----------------------------------------*/
 
 .hero-img {
    position: absolute;
-   background: url("../images/tortas-4.jpg");
+   top: 4em;
+   left: 0;
+   width: 100%;
+   height: 90vh;
+   background: url("../images/tortas-2.jpg");
    background-size: cover;
    /* background-position-y: 30%; */
-   width: 100%;
-   height: 60vh;
-   right: 0;
-   top: 15em;
-   z-index: -1;
+   z-index: -100;
+   transform: scaleX(-1);
 }
 
-main {
-   position: relative;
+main.hero {
    color: var(--title-color);
    text-shadow: 1px 1px 2px var(--shadow-color); /*x y blur color*/
-   margin-top: 0.25em;
+   margin-top: 5em;
+   text-align: left;
    height: 95vh;
-   text-align: center;
    /* padding: 5em; */
 }
 
@@ -101,11 +118,19 @@ h1 {
 }
 
 main p {
-   margin-top: 2rem;
+   position: relative;
+   /* bottom: 2em; */
+   /*------------------------ Al usar bottom desaparece el texto------------------------ */
+   margin-top: 12rem; /*--------------------Solución temporal--------------------*/
    font-size: 0.75rem;
    color: var(--subtitle-color);
    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
    line-height: 1rem;
+}
+
+main p span {
+   color: var(--subtitle-color-span);
+   text-shadow: 1px 1px 2px var(--brown-accent-color);
 }
 
 .btn-hero {
@@ -117,7 +142,7 @@ main p {
    font-size: var(--button-font-size);
    border: none;
    border-radius: 5px;
-   padding: 0.5rem 1.5rem;
+   padding: 0.5rem 1rem;
    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -131,16 +156,25 @@ main p {
 .icons {
    width: 10%;
 }
+/* ---------------------------------------FINAL MAIN:HERO--------------------------------------- */
 
-.products {
-   display: flex;
+/* --------------------------------------SECTION: PRODUCTOS-------------------------------------- */
+.section-title {
+   display: none;
+}
+
+.icons-products {
+   display: grid;
+   grid-template-columns: repeat(4, 1Fr);
+   gap: 5px;
 }
 
 .icons-products img {
-   width: 15%;
+   width: 75%;
 }
 
-.icons-products a {
+.ver-mas-products {
+   display: none;
 }
 
 .cards-products {
