@@ -1,42 +1,150 @@
+/*---------------------------------CINTIA---------------------------------*/
+
 :root {
+   --font-text: "Montserrat", sans-serif;
+   --font-size-title: 3rem;
+
+   --title-color: rgba(60, 42, 30, 1);
+   --subtitle-color: rgb(255, 255, 255);
+
    --background-color: rgb(247, 246, 246);
    --shadow-color: rgba(135, 109, 91, 0.5);
-   --title-color: rgba(60, 42, 30, 1);
-   --button-color: rgba(157, 68, 146, 1);
    --brown-accent-color: rgba(193, 162, 141, 1);
+
+   --button-background-color: rgba(157, 68, 146, 1);
+   --button-font-color: rgb(255, 255, 255);
+   --button-font-size: 0.85rem;
+
    --footer-background-color: rgb(96, 1, 74);
    --footer-font-color: rgb(247, 246, 246);
-   --font-text: "Montserrat", sans-serif;
-   
-}
-
-* {
-   margin: 0;
-   padding: 0;
 }
 
 body {
+   /* position: absolute; */
+   margin: 1.5em;
+   padding: 0;
+   display: grid;
+   grid-template-columns: 1Fr;
    background-color: var(--background-color);
    font-family: var(--font-text);
+   box-sizing: border-box;
 }
 
-.hero-img {
-   height: 100vh;
-   right: 0;
-   top: 2rem;
-   z-index: -100;
+a {
+   text-decoration: none;
 }
+
+header {
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 0.2em;
+}
+
+header i {
+   cursor: pointer;
+}
+
+nav {
+   display: none;
+}
+
+.fa-circle-xmark {
+   display: none;
+}
+
+/* .separador {
+   margin-top: 0.5rem;
+   overflow: hidden;
+   height: 10px;
+}
+
+.separador:after {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 30px;
+   margin: -30px auto 0;
+   border-radius: 120px / 10px;
+   box-shadow: 0px 0px 8px var(--shadow-color);
+} */
+
+/*----------------------------Se rompe el codigo cuando lo pongo----------------------------*/
+
+.hero-img {
+   position: absolute;
+   background: url("../images/tortas-4.jpg");
+   background-size: cover;
+   /* background-position-y: 30%; */
+   width: 100%;
+   height: 60vh;
+   right: 0;
+   top: 15em;
+   z-index: -1;
+}
+
+main {
+   position: relative;
+   color: var(--title-color);
+   text-shadow: 1px 1px 2px var(--shadow-color); /*x y blur color*/
+   margin-top: 0.25em;
+   height: 95vh;
+   text-align: center;
+   /* padding: 5em; */
+}
+
+h1 {
+   font-size: var(--font-size-title);
+   font-family: "Dancing Script", cursive;
+   line-height: 3rem;
+   margin: 1rem 0;
+}
+
+main p {
+   margin-top: 2rem;
+   font-size: 0.75rem;
+   color: var(--subtitle-color);
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+   line-height: 1rem;
+}
+
+.btn-hero {
+   position: relative;
+   bottom: -1em;
+   align-self: center;
+   background-color: var(--button-background-color);
+   color: var(--button-font-color);
+   font-size: var(--button-font-size);
+   border: none;
+   border-radius: 5px;
+   padding: 0.5rem 1.5rem;
+   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* .fa-angles-down {
+   position: absolute;
+   bottom: 3em;
+   left: 0;
+   color: var(--subtitle-color);
+} */
 
 .icons {
    width: 10%;
 }
 
-.icons-products img {
-   width: 5%;
+.products {
+   display: flex;
 }
 
-.cards-products img {
+.icons-products img {
    width: 15%;
+}
+
+.icons-products a {
+}
+
+.cards-products {
+   display: none;
 }
 
 footer {
@@ -47,3 +155,5 @@ footer {
 .footer-small-text {
    font-size: 0.5em;
 }
+
+/*-----------------------------FINAL CINTIA-----------------------------*/
