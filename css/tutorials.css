@@ -1,0 +1,118 @@
+/* HEADER: Estilo en main.css */
+
+/* --------------------------MAIN-------------------------- */
+main {
+   background: url(/images/Fondo-chico.png);
+   overflow-y: scroll;
+   margin-top: 65px;
+}
+
+.h1-tutorial {
+   font-family: var(--font-title);
+   font-size: 2.5em;
+   margin: auto 0 0 0;
+   padding: 1.5rem var(--padding-small);
+   color: var(--color-background);
+   background: var(--color-dark);
+}
+
+.card-video {
+   color: var(--color-dark);
+   background-color: var(--color-background);
+   box-shadow: 2px 2px 3px 2px var(--color-shadow);
+   border-radius: 5px;
+   overflow: hidden;
+
+   margin: 1.5rem var( --margin-cards-tutorials);
+}
+
+.tutorial {
+   margin: 0rem 1rem 0; 
+}
+
+h3 {
+   padding: 0.75rem 1rem;
+   left: 0;
+   display: block;
+   
+   background: var(--color-brown-accent);
+   text-transform: uppercase;
+   font-size: 0.85em;
+   letter-spacing: 2px;
+}
+
+.text h2 {
+   font-weight: bold;
+   line-height: 1.25em;
+   margin-top: 1.25rem;
+}
+
+.text p {
+   margin: 1rem 0;
+   line-height: 1.5rem;
+   text-align: justify;
+}
+
+iframe {
+   margin: auto;
+   width: 100%;
+   height: 100%;
+}
+
+/* footer: Estilo en main.css */
+
+@media screen and (min-width:500px){
+  :root {
+   --margin-cards-tutorials:3rem;
+   --padding-small: 3rem;
+  }
+
+   iframe {
+      height: 30vh;
+   }
+}
+
+@media screen and (min-width: 760px) {
+
+   :root {
+      --margin-cards-tutorials:4rem;
+      --padding-small: 4rem;
+     }
+
+   .tutorial {
+      /* display: flex;
+      align-items: center;
+      gap: 3em;
+      text-align: left; */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3em;
+      margin: 1.5em 2em;
+      align-items: center;
+      height: 15rem;
+   }
+
+   .tutorial.inverso {
+      grid-template-areas: "left right";
+   }
+   
+   .tutorial.inverso iframe {
+      grid-area: left;
+   }
+}  
+
+@media screen and (min-width: 1000px){
+
+   :root {
+      --margin-cards-tutorials:6.5rem;
+      --padding-small: 5rem;
+     }
+}
+
+@media screen and (min-width: 1200px){
+
+   :root {
+      --margin-cards-tutorials: 13rem;
+      --padding-small: 10rem;
+     } 
+}
