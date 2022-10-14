@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Google fonts: Montserrat -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Pacifico&display=swap"
+          rel="stylesheet">
+
+     <!-- ICONOS -->
+     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+     <script src="https://kit.fontawesome.com/3d04d0da9c.js" crossorigin="anonymous"></script>
+
+     <!-- Estilos -->
+     <link rel="stylesheet" href="css/style.css" />
+
+     <!-- JS -->
+
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <script>
+          $(function () {
+               $("input[type=radio]").click(function () {
+                    calcular();
+               })
+          });
+          function calcular() {
+               $radios = $("input[type=radio]:checked");
+               $niveles = $("input[name=nivel]:checked");
+               nivel = parseFloat($niveles.val());
+               var suma = 0;
+               var presupuesto = 0;
+               $radios.each(function () {
+                    suma = suma + parseFloat($(this).val());
+               })
+               presupuesto = (suma-nivel)*nivel;
+               $(".resultado").html(presupuesto)
+          }
+     </script>
+
+
+     <title>Presupuesto</title>
+</head>
+
+<body>
+     <div class="container">
+          <header>
+               <a href="index.html" class="logo"><img src="/images/Logo-nav.svg" alt="Logo" /></a>
+               <iconify-icon id="menu" icon="iconoir:menu-scale" style="color: #60014a;" width="35" flip="horizontal">
+               </iconify-icon>
+               <nav>
+                    <iconify-icon id="closed" icon="ep:close-bold" style="color: #f7f6f6;" width="2em">
+                    </iconify-icon>
+                    <ul>
+                         <li><a href="index.html" class="pages">Inicio</a></li>
+                         <li><a href="gallery.html" class="pages">Galería</a></li>
+                         <li><a href="tutorials.html" class="pages">Tutoriales</a></li>
+                         <li><a href="contact.html" class="pages">Contacto</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                         <a href="budget.html">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              <p class="nav-icons-text">Tienda</p>
+                         </a>
+                         <a href="login.html">
+                              <i class="fa-solid fa-user"></i>
+                              <p class="nav-icons-text">Ingresar</p>
+                         </a>
+                    </div>
+               </nav>
+          </header>
+
+          <main>
+
+               <section class="intro">
+
+                    <div class="intro-text">
+                         <h1 class="h1">Presupuesto</h1>
+                         <p>Obtené un presupuesto al instante del pastel que estás necesitando. Elegiendo la opción que
+                              mas se ajuste a tus requerimientos de nuestro catálogo</p>
+                         <p>Solo debés llenar el siguiente formulario:</p>
+                    </div>
+
+               </section>
+
+               <section class="form">
+                    <h2 class="form-title">Customizá tu pastel</h2>
+
+                    <form class="formulario" action="">
+                         <fieldset>
+                              <legend>CANTIDAD DE NIVELES</legend>
+                              <p><input value="2" type="radio" name="nivel">1 nivel</p>
+                              <p><input value="2.5" type="radio" name="nivel">2 niveles</p>
+                              <p><input value="3" type="radio" name="nivel">3 niveles</p>
+                              <p><input value="3.5" type="radio" name="nivel">4 niveles</p>
+                              <p><input value="4" type="radio" name="nivel">5 niveles</p>
+                         </fieldset>
+                         <fieldset>
+                              <legend>TAMAÑO DEL NIVEL MÁS GRANDE</legend>
+                              <p><input value="50" type="radio" name="tamaño">18 cm</p>
+                              <p><input value="75" type="radio" name="tamaño">22 cm</p>
+                              <p><input value="100" type="radio" name="tamaño">24 cm</p>
+                              <p><input value="125" type="radio" name="tamaño">26 cm</p>
+                              <p><input value="200" type="radio" name="tamaño">30 cm</p>
+                         </fieldset>
+                         <fieldset>
+                              <legend>SABOR DEL BISCOCHUELO Y RELLENO</legend>
+                              <p><input value="300" type="radio" name="sabor">Chocolate con ganache de chocolate</p>
+                              <p><input value="250" type="radio" name="sabor">Chocolate con mermelada de frambueza</p>
+                              <p><input value="250" type="radio" name="sabor">Limón con crud de limón</p>
+                              <p><input value="300" type="radio" name="sabor">Red velvet con queso crema</p>
+                              <p><input value="200" type="radio" name="sabor">Vainilla con memelada de frambueza</p>
+                         </fieldset>
+                         <fieldset>
+                              <legend>COBERTURA</legend>
+                              <p><input value="100" type="radio" name="cobertura">Buttercream</p>
+                              <p><input value="100" type="radio" name="cobertura">Crema chantilly</p>
+                              <p><input value="300" type="radio" name="cobertura">Fondant</p>
+                              <p><input value="250" type="radio" name="cobertura">Ganache de chocolate</p>
+                              <p><input value="50" type="radio" name="cobertura">Nude cake</p>
+                         </fieldset>
+                         <fieldset>
+                              <legend>DECORACIÓN</legend>
+                              <p><input value="200" type="radio" name="decoración">Flores con buttercream</p>
+                              <p><input value="100" type="radio" name="decoración">Efecto goteo con chocolate</p>
+                              <p><input value="200" type="radio" name="decoración">Dulces y chocolate</p>
+                              <p><input value="150" type="radio" name="decoración">Flores naturales</p>
+                              <p><input value="150" type="radio" name="decoración">Frutas</p>
+                         </fieldset>
+
+                         <div class="resultado"></div>
+
+                    </form>
+
+
+
+
+     </div>
+     </section>
+
+
+     </main>
+
+     <footer>
+          <div class="footer-top">
+               <a class="footer-logo" href="index.html"><img src="/images/Logo-grande.svg" alt=" PyCakes" /></a>
+          </div>
+
+          <hr />
+
+          <div class="footer-bottom">
+
+               <div class="social-media">
+                    <div class="social-icon">
+                         <a href="#">
+                              <i class="fa-brands fa-facebook"></i>
+                         </a>
+                         <p>Facebook</p>
+                    </div>
+
+                    <div class="social-icon">
+                         <a href="#">
+                              <i class="fa-brands fa-instagram"></i>
+                         </a>
+                         <p>Instagram</p>
+                    </div>
+
+                    <div class="social-icon">
+                         <a href="#">
+                              <i class="fa-brands fa-pinterest"></i>
+                         </a>
+                         <p>Pinterest</p>
+                    </div>
+
+                    <div class="social-icon">
+                         <a href="#">
+                              <i class="fa-brands fa-twitter"></i>
+                         </a>
+                         <p>Twitter</p>
+                    </div>
+
+                    <div class="social-icon">
+                         <a href="#">
+                              <i class="fa-brands fa-youtube"></i>
+                         </a>
+                         <p>YouTube</p>
+                    </div>
+
+               </div>
+
+               <div class="copyright">
+                    <div class="footer-small-text">
+                         <p>&#169; Todos los derechos reservados 2022.</p>
+                         <p> Programado por Carlos Davoli, Flavia Micaela Sandoval Pacheco y Cintia Elizabeth
+                              Redondas
+                         </p>
+                    </div>
+               </div>
+          </div>
+
+     </footer>
+     </div>
+
+</body>
+
+</html>
