@@ -185,14 +185,14 @@ let infantiles = [
 {
    background: "url('/images/tortas-infantiles-11.jpg')",
    nombreProducto: "CakePops",
-   descripcionProducto: ""
+   descripcionProducto: "Mini tortas en palito cubiertas de chocolate. Pueden ser de colores lisos o con las caritas de sus personajes favoritos."
    //11
 
 },
 {
    background: "url('/images/tortas-infantiles-12.jpg')",
    nombreProducto: "Dulces",
-   descripcionProducto: ""
+   descripcionProducto: "Dulces armados artesanalmente por nuestro maestro especialista en azúcar. Paleta de colores personalizada."
    //12
 
 },
@@ -226,7 +226,7 @@ let macarons = [
 {
    background: "url('/images/macarons-9.jpg')",
    nombreProducto: "Dulce de leche",
-   descripcionProducto: "Lo mejor de los dos mundos: la delicadeza de los macarons con el sabor del dulce de leche. "
+   descripcionProducto: "Lo mejor de los dos mundos: la delicadeza de los macarons con el sabor del dulce de leche."
    //9
 
 },
@@ -395,7 +395,6 @@ let tortas = [
    descripcionProducto: "Masa preparada con harina de almendras y decorada con macarons. Paleta de colores personalizada." //1
 }
 ]
- 
  
  //document.getElementById("product-name0").innerHTML = cookies[0].nombreProducto
  //document.getElementById("product-name1").innerHTML = cookies[1].nombreProducto

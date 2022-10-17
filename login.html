@@ -1,0 +1,103 @@
+<!-- /* CARLOS */ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login-style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/3d04d0da9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Log in</title>
+  </head>
+
+  <body>
+    <header id="idheader">            
+    </header>
+
+    <main>
+      <div class="contenedor__todo">
+        <!-- FONDO FIJO TRASERO (SE DESPLAZARA ADELANTE) -->
+        <div class="caja__trasera">
+          <div class="caja__trasera-login">
+            <h3>¿Estas Registrado?</h3>
+            <p>Inicia sesión para entrar en la pagina</p>
+            <button id="btn__iniciar-sesion">Iniciar sesión</button>
+          </div>
+          <div class="caja__trasera-register">
+            <h3>¿Aun no tienes cuenta?</h3>
+            <p>Registrate para iniciar sesión</p>
+            <button id="btn__registrarse">Registrarse</button>
+          </div>
+        </div>
+        <!-- FORMULARIO LOGIN Y REGISTER -->
+        <div class="contenedor__login-register">
+          <!-- LOGIN -->
+          <form action="form__login" class="formulario__login" id="formulario__login">
+            <h2>Iniciar sesión</h2>
+
+            <div class="form-control">
+              <label for="email__login">Email</label>
+              <input type="text" id="email__login" placeholder="Correo Electrónico"/>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <input type="password" id="password__login" placeholder="Contraseña"/>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <button type="submit">Entrar</button>
+          </form>
+          <!-- REGISTER -->
+          <form action="form__register" class="formulario__register" id="formulario__register" >
+            <h2>Registrarse</h2>
+            <div class="form-control">
+              <input type="text" id="name__register" placeholder="Nombre Completo">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <input type="text" id="email__register" placeholder="Correo Electronico">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="password" id="password__register" placeholder="Contraseña" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <input type="password" id="password2__register" placeholder="Repetir Contraseña">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+
+            <button type="submit">Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer id="idfooter">
+    </footer>
+
+    <script src="js/login-script.js"></script>
+    <script src="./js/scripts2.js"></script>
+  </body>
+</html>

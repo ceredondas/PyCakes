@@ -8,7 +8,6 @@ body {
   display: grid;
   min-height: 100vh;
   place-items: center;
-  line-height: 1.6;
   background-color: var(--color-background);
   background-blend-mode: multiply;
   background-size: cover;
@@ -125,6 +124,7 @@ main{
 .card-content {
   --padding: 1.5rem; 
   padding: var(--padding);
+  line-height: 1.6;
   background: linear-gradient(
      rgba(0, 0, 0, 0),
      rgba(0, 0, 0, 0.2) 10%,
