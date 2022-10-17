@@ -1,0 +1,226 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  line-height: 1.6;
+  background-color: var(--color-background);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+main{
+  margin-top: var(--header-height);
+  text-align: left;
+}
+
+.h1-gallery {
+  font-family: var(--font-title);
+   font-size: 2.5em;
+   margin: auto 0 0 0;
+   padding: 1.5rem var(--padding-small);
+   color: var(--font-color-light);
+   background-color: var(--color-dark);
+}
+
+.gallery {
+  box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
+  padding-top: 2rem;
+  position: relative;
+}
+
+.ul-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.a-gallery {
+  margin-inline: 1.5rem;
+  color: var(--font-color-dark);
+  font-weight: 500;
+  transition: 300ms ease;
+}
+
+.a-gallery:hover {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dropdown{
+  display:none;
+}
+
+.gallery-items {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  text-align: left;
+}
+
+.card {
+  color: var(--font-color-light);
+  font-family: sans-serif;
+  
+  padding: 10rem 0 0;
+  width: 30ch; 
+  height: 35ch;
+  border-radius: 1rem; 
+  overflow: hidden; 
+
+  transition: transform 500ms ease;
+}
+
+.card1 {
+  background: url("/images/cookies-1.jpg");
+  background-size: cover;
+}
+
+.card2 {
+  background: url("/images/cookies-2.jpg");
+  background-size: cover;
+}
+
+.card3 {
+  background: url("/images/cookies-3.jpg");
+  background-size: cover;
+}
+
+.card4 {
+  background: url("/images/cookies-4.jpg");
+  background-size: cover;
+}
+
+.card5 {
+  background: url("/images/cookies-5.jpg");
+  background-size: cover;
+}
+
+.card6 {
+  background: url("/images/cookies-6.jpg");
+  background-size: cover;
+}
+
+.card7 {
+  background: url("/images/cookies-7.jpg");
+  background-size: cover;
+}
+
+.card8{
+  background: url("/images/cookies-8.jpg");
+  background-size: cover;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+
+.card-content {
+  --padding: 1.5rem; 
+  padding: var(--padding);
+  background: linear-gradient(
+     rgba(0, 0, 0, 0),
+     rgba(0, 0, 0, 0.2) 10%,
+     rgba(0, 0, 0, 0.8)
+  );
+  transform: translateY(-35%);
+}
+
+/* .button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--color-background);
+  background-color: var(--color-accent);
+  padding: 0.5rem 1.25rem;
+  margin-top: .5rem;
+  border-radius: 5px;
+} */
+
+@media screen and (min-width:1000px) {
+  
+  .dropdown{
+    display: block;
+  }
+
+  .select{
+    width: 15%;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--color-dark);
+    border-radius: 10px;
+    color: var(--font-color-dark);
+  }
+
+  .gallery-items{
+    padding-inline: 10rem;
+  }
+  
+  @media (hover) {
+    .card-content {
+       transform: translateY(65%);
+       transition: transform 500ms ease;
+    }
+  
+    .card:hover .card-content,
+    .card:focus-within .card-content {
+       transform: translateY(-12%);
+    }
+  
+    .card:focus-within .card-content {
+       transition-duration: 0ms;
+    }
+  
+    .card-content > *:not(.card-title) {
+       opacity: 0;
+       transition: opacity 500ms linear;
+    }
+  
+    .card:hover .card-content > *:not(.card-title),
+    .card:focus-within .card-content > *:not(.card-title) {
+       opacity: 1;
+    }
+  
+    .card-title::after {
+       transform: scaleX(0);
+    }
+  }
+  
+  .card-title {
+    position: relative;
+    width: max-content;
+  }
+  
+  .card-title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: calc(100% + var(--padding));
+    background-color: var(--color-accent);
+    left: calc(var(--padding) * -1);
+    bottom: 0;
+  
+    transform-origin: left;
+    transition: transform 500ms ease;
+  }
+  
+  .card:hover .card-title::after,
+  .card:focus-within .card-title::after {
+    transform: scaleX(1);
+  }
+  
+/*   
+  .button:hover,
+  .button:focus {
+    background-color: var(--color-background);
+    color: var(--font-color-dark);
+    border: 1px solid var(--color-dark);
+  } */
+}

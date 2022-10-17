@@ -58,6 +58,10 @@ macarons-6: Foto de <a href="https://unsplash.com/@brigittetohm?utm_source=unspl
 macarons-7: Foto de <a href="https://unsplash.com/@serioja?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Serghei Savchiuc</a> en <a href="https://unsplash.com/es?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
 macarons-8: Foto de <a href="https://unsplash.com/@proskurovskiy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vladimir Proskurovskiy</a> en <a href="https://unsplash.com/es?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+macarons-9: Foto de <a href="https://unsplash.com/@petitesweetsnz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michelle Tsang</a> en <a href="https://unsplash.com/es/s/fotos/macarons?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+macarons-10: Foto de <a href="https://unsplash.com/@janitors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karlis Dambrans</a> en <a href="https://unsplash.com/es/s/fotos/macarons?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
 
 
@@ -100,8 +104,14 @@ Tortas-de-boda-6:
 Tortas-de-boda-7: Foto de <a href="https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Leung</a> en <a href="https://unsplash.com/es?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
 Tortas-de-boda-8: Foto de <a href="https://unsplash.com/@srosinger3997?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samantha Gades</a> en <a href="https://unsplash.com/es?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
 
+Tortas-de-boda-9: Foto de Jonathan Borba: https://www.pexels.com/es-es/foto/pastel-blanco-de-4-niveles-3014858/ 
+
+Tortas-de-boda-10: Foto de Kasonya Wilcox: https://www.pexels.com/es-es/foto/una-configuracion-artistica-de-una-decoracion-de-halloween-con-hojas-flores-calavera-y-un-nivel-de-contenedores-pintados-3012214/
+
+Tortas-de-boda-11: Foto de Tara Winstead: https://www.pexels.com/es-es/foto/monedas-redondas-de-oro-y-plata-en-taza-de-ceramica-blanca-6479548/
+  
+Tortas-de-boda-12: Foto de Jusper Mwangi: https://www.pexels.com/es-es/foto/pastel-de-4-niveles-con-rodajas-de-naranja-en-la-superficie-2510104/
 
 
 Tortas infantiles
@@ -115,6 +125,9 @@ Tortas-infantiles-6: https://unsplash.com/es/fotos/cQPEKnDktVY?utm_source=unspla
 Tortas-infantiles-7: https://unsplash.com/es/fotos/ZdQbKYHGn4c?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 Tortas-infantiles-8: https://unsplash.com/es/fotos/IyfwmOF6D14?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 Tortas-infaantiles-9: https://unsplash.com/es/fotos/SxHxyNx-6YI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+Tortas-infaantiles-10: Foto de Rodrigo Souza: https://www.pexels.com/es-es/foto/pastel-de-tres-capas-rosa-y-blanco-2531546/
+Tortas-infantiles-11: Foto de <a href="https://unsplash.com/@taiscaptures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tai's Captures</a> en <a href="https://unsplash.com/es/s/fotos/candy-bar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Tortas-infantiles-12: Foto de <a href="https://unsplash.com/@dcjamie_1202?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jamie Albright</a> en <a href="https://unsplash.com/es/s/fotos/candy-bar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 
 Postres: 
@@ -126,7 +139,8 @@ Postres-4: https://unsplash.com/es/fotos/oXfOK1ymtPU?utm_source=unsplash&utm_med
 Postres-5: https://unsplash.com/es/fotos/2lUo-DcYdwk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 Postres-6: https://unsplash.com/es/fotos/2TqvKIdUk5Q?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 Postres-7: https://unsplash.com/es/fotos/AigxB1zfRVo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
-Postres-8:
+Postres-8: https://www.nuria.com.ar/producto/bavarois-de-tres-chocolates/  
+Postres-9: Foto de Max Griss: https://www.pexels.com/es-es/foto/comida-naturaleza-muerta-sabroso-fotografia-de-comida-11701858/ 
 
 
 Tartas
@@ -139,3 +153,4 @@ tartas-5: https://unsplash.com/es/fotos/dvmiNXMh9d8?utm_source=unsplash&utm_medi
 tartas-6:
 tartas-7:
 tartas-8: https://unsplash.com/es/fotos/ZUb3YN8B5K4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+tartas-9: Foto de <a href="https://unsplash.com/@catscoming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cats coming</a> en <a href="https://unsplash.com/es/s/fotos/tarta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
