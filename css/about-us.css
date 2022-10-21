@@ -24,15 +24,17 @@ body{
   width: 100%;
   height: 100vh;
 }
+/* Manejo de las Flechas */
 .slider .controls{
   position: absolute;
-  top: 70%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%,-50%);
   width: 100px;
   height: 100px;
   z-index: 2;
 }
+/* AMBAS FLECHAS */
 .slider .controls > div{
    position: absolute;
    width: 50px;
@@ -42,12 +44,14 @@ body{
    font-size: 20px;
    cursor: pointer;
 }
+/* Flecha abajo */
 .slider .controls > .up{
   top: 0px;
   right: 0px;
   background: #fff;
   color: #111;
 }
+/* Controlar flecha hacia abajo */
 .slider .controls > .down{
   top: 0px;
   left: 0px;
@@ -83,9 +87,11 @@ body{
   font-size: 50px;
   margin-bottom: 10px;
 }
+/* Maneja el lado slider izquierdo */
 .slider .wrapper .left > div p{
   color: #555;
   font-size: 18px;
+  /* height: 30%; */
 }
 .slider .wrapper .right > div img{
   width: 100%;
@@ -97,7 +103,7 @@ body{
 }
 
 /* HACER TODO RESPONSIVE */
-@media screen and (max-width: 650px){
+@media screen and (max-width: 750px){
   .slider .wrapper .left > div p {
       font-size: 15px ;
       
@@ -109,13 +115,18 @@ body{
   .slider .wrapper{
       line-height: 25px;
   }
+  .slider .wrapper .left .author{
+    display: none;
+  }
+  .slider .wrapper .left .phrase{
+    display: none;
+  }
 
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 490px){
   .slider .wrapper .left > div p {
       font-size: 12px ;
-      
   } 
   .slider .wrapper .left > div h2{
       font-size: 25px;
@@ -124,5 +135,68 @@ body{
   .slider .wrapper{
       line-height: 15px;
   }
+  .slider .wrapper .left .author{
+    display: none;
+  }
+  .slider .wrapper .left .phrase{
+    display: none;
+  }
+}
 
+@media screen and (max-height: 650px ){
+  .slider .wrapper .left > div p {
+    font-size: 15px ;
+    
+} 
+.slider .wrapper .left > div h2{
+    font-size: 30px;
+    line-height: 30px;
+}
+.slider .wrapper{
+    line-height: 25px;
+}
+.slider .wrapper .left .author{
+  display: none;
+}
+.slider .wrapper .left .phrase{
+  display: none;
+}
+
+
+}
+
+@media screen and (max-height: 650px ) and (max-width: 490px){
+  .slider .wrapper .left > div p {
+    font-size: 12px ;
+} 
+.slider .wrapper .left > div {
+    font-size: 25px;
+    line-height: 25px;
+}
+.slider .wrapper{
+    line-height: 15px;
+}
+.slider .wrapper .left .author{
+  display: none;
+}
+.slider .wrapper .left .phrase{
+  display: none;
+}
+}
+
+/* Frases de api */
+
+.slider .wrapper .left .author{
+  color: black;
+  font-size: small;
+  margin-left: 70%;
+  line-height: 10px;
+  text-align: center;
+}
+.slider .wrapper .left .phrase{
+  color: #111;
+  font-size: small;
+  margin-left: 70%;
+  line-height: 15px;
+  text-align: center;
 }
