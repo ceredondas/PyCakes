@@ -13,19 +13,19 @@ flip="horizontal"></iconify-icon>
        <li><a href="index.html" class="pages">Inicio</a></li>
        <li><a href="gallery.html" class="pages">Galería</a></li>
        <li><a href="tutorials.html" class="pages">Tutoriales</a></li>
-       <li><a href="contact.html" class="pages">Contacto</a></li>
+       <li><a href="about-us.html" class="pages">Nosotros</a></li>
     </ul>
 
     <div class="nav-icons">
-       <a href="budget.html">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <p class="nav-icons-text">Tienda</p>
-         </a>
+      <a href="presupuesto.html">
+         <i class="fa-solid fa-cake-candles"></i>  
+         <p class="nav-icons-text">Presupuesto</p>
+      </a>
 
-         <a href="login.html">
-            <i class="fa-solid fa-user"></i>
-            <p class="nav-icons-text">Ingresar</p>
-         </a>
+      <a href="login.html">
+         <i class="fa-solid fa-user"></i>
+         <p class="nav-icons-text">Ingresar</p>
+      </a>
     </div>
 </nav>
 `
@@ -44,7 +44,7 @@ let footer = `
 
             <a class="footer-logo" href="index.html"><img src="/images/Logo-grande.svg" alt=" PyCakes" /></a>
 
-            <button class="footer-btn">Presupuesto &#8594;</button>
+            <a href="contact.html" class="footer-btn">Contacto</a>
          </div>
             
             <hr />
@@ -88,10 +88,10 @@ let footer = `
                </div>
             
                <div class="social-icon">
-                  <a href="#">
+                  <a href="mailto:pycakes@gmail.com">
                      <i class="fa-solid fa-envelope"></i> 
                   </a>
-                  <p>Contacto</p>
+                  <p>Mail</p>
                </div>
             
             </div>

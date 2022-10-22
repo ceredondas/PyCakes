@@ -16,6 +16,7 @@ body {
 main{
   margin-top: var(--header-height);
   text-align: left;
+  width: 100vw;
 }
 
 .h1-gallery {
@@ -30,28 +31,54 @@ main{
 .gallery {
   box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
   padding-top: 2rem;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+button{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+
+  font-size: 16px;
 }
 
 .ul-gallery {
-  display: flex;
-  justify-content: center;
+  display: none;
+  width: 90vw;
+  text-align: center;
+}
+
+.categories{
+  display: none;
 }
 
 .a-gallery {
-  margin-inline: 1.5rem;
+  display: block;
   color: var(--font-color-dark);
   font-weight: 500;
   transition: 300ms ease;
-}
-
-.a-gallery:hover {
-  font-weight: 700;
+  width: 100%;
+  background-color: var(--color-shadow);
+  padding: 1rem 1.5rem;
   cursor: pointer;
+  border-bottom: 0.5px solid var(--color-background);
 }
 
-.dropdown{
-  display:none;
+.a-gallery:active{
+  background-color: var(--color-dark);
+  color: var(--font-color-light);
+}
+
+.show{
+  display: block;
 }
 
 .gallery-items {
@@ -68,52 +95,12 @@ main{
   font-family: sans-serif;
   
   padding: 10rem 0 0;
-  width: 30ch; 
-  height: 35ch;
+  width: 280px; 
+  height: 350px;
   border-radius: 1rem; 
   overflow: hidden; 
 
   transition: transform 500ms ease;
-}
-
-.card1 {
-  background: url("/images/cookies-1.jpg");
-  background-size: cover;
-}
-
-.card2 {
-  background: url("/images/cookies-2.jpg");
-  background-size: cover;
-}
-
-.card3 {
-  background: url("/images/cookies-3.jpg");
-  background-size: cover;
-}
-
-.card4 {
-  background: url("/images/cookies-4.jpg");
-  background-size: cover;
-}
-
-.card5 {
-  background: url("/images/cookies-5.jpg");
-  background-size: cover;
-}
-
-.card6 {
-  background: url("/images/cookies-6.jpg");
-  background-size: cover;
-}
-
-.card7 {
-  background: url("/images/cookies-7.jpg");
-  background-size: cover;
-}
-
-.card8{
-  background: url("/images/cookies-8.jpg");
-  background-size: cover;
 }
 
 .card:hover,
@@ -130,48 +117,72 @@ main{
      rgba(0, 0, 0, 0.2) 10%,
      rgba(0, 0, 0, 0.8)
   );
-  transform: translateY(-35%);
+  transform: translateY(65%);
 }
 
-/* .button {
-  cursor: pointer;
-  display: inline-block;
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: var(--color-background);
-  background-color: var(--color-accent);
-  padding: 0.5rem 1.25rem;
-  margin-top: .5rem;
-  border-radius: 5px;
-} */
-
 @media screen and (min-width:1000px) {
-  
-  .dropdown{
-    display: block;
+
+  .gallery{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
   }
 
-  .select{
-    width: 15%;
-    padding: 1rem 1.5rem;
-    border: 2px solid var(--color-dark);
-    border-radius: 10px;
-    color: var(--font-color-dark);
+  .ul-gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 2rem;
+    padding-inline: 2.5rem;
+    width: auto;
+  }
+
+  button {
+    display: none;
+  }
+  
+  .categories {
+    display: block;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .a-gallery{
+    background: none;
+    text-align: left;
+    display: block;
+    width: 150px;
+    padding: 1rem;
+    transition: all 0 ease;
+  }
+
+  .a-gallery:hover {
+    background-color: var(--color-accent);
+    color: var(--font-color-light);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .a-gallery:target{
+    text-decoration: underline;
   }
 
   .gallery-items{
-    padding-inline: 10rem;
+    padding-right: 5rem;
   }
   
   @media (hover) {
     .card-content {
-       transform: translateY(65%);
+       transform: translateY(85%);
        transition: transform 500ms ease;
     }
   
     .card:hover .card-content,
     .card:focus-within .card-content {
-       transform: translateY(-12%);
+       transform: translateY(2%);
     }
   
     .card:focus-within .card-content {
@@ -215,12 +226,5 @@ main{
   .card:focus-within .card-title::after {
     transform: scaleX(1);
   }
-  
-/*   
-  .button:hover,
-  .button:focus {
-    background-color: var(--color-background);
-    color: var(--font-color-dark);
-    border: 1px solid var(--color-dark);
-  } */
+
 }

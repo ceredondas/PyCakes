@@ -63,7 +63,7 @@ body {
 main,
 header,
 footer {
-  width: 100%;
+  width: 100vw;
 }
 
 a {
@@ -74,7 +74,7 @@ li {
   list-style: none;
 }
 
-/* .container {
+.container {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
@@ -84,7 +84,7 @@ li {
     "features"
     "testimonials"
     "footer";
-} */
+}
 
 /*---------------------------------HEADER---------------------------------*/
 
@@ -98,7 +98,6 @@ header {
   top: 0;
   z-index: 100;
   padding-inline: var(--padding-small);
-  width: 100%;
   height: var(--header-height);
 
   display: flex;
@@ -185,7 +184,6 @@ nav a:active {
   background-repeat: no-repeat;
   background-position: center 285px;
   
-  width: 100vw;
   height: 100vh;
 
   padding-top: 93px; 
@@ -204,7 +202,7 @@ nav a:active {
 .hero-text .h1 {
   font-family: "Dancing Script", cursive;
   font-size: var(--font-size-title);
-  line-height: 3.5rem;
+  /* line-height: 3.5rem; */
 
   padding-top: 1rem;
 }
@@ -292,7 +290,11 @@ nav a:active {
 
 .features-cards {
   display: none;
-}                              
+} 
+
+.features-btn{
+  display: none;
+}
 /*------------------------------------------FINAL PRODUCTS------------------------------------------*/
 /*-------------------------------------------TESTIMONIALS-------------------------------------------*/
 
@@ -429,6 +431,7 @@ footer a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 2rem;
 }
 
 .footer-logo img {
@@ -458,6 +461,7 @@ footer a {
 }
 
 .footer-li{
+  text-align: left;
   padding: 0.2rem;
   font-weight: 400;
 }
@@ -484,7 +488,6 @@ footer hr {
   gap: 1rem;
 
   margin: 1.5rem auto;
-  padding-left: 55px;
 }
 
 .social-icon {
@@ -543,7 +546,7 @@ footer hr {
 }
 
 @media screen and (min-width: 450px){
-
+  
   .hero {
     background-position: center 90px;
   }
@@ -649,6 +652,7 @@ footer hr {
     --padding-features-top-bottom:2.5rem;
     --font-size-xxs: 0.9rem;
     --header-height:95px;
+    --gap-features: 1.5rem;
   }
 
   header {
@@ -764,7 +768,7 @@ footer hr {
 
   .hero-text {
     width: 45%;;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 5rem);
     padding-left: var(--padding-small);
     padding-right: 4rem;
     padding-top: 8rem;
@@ -773,12 +777,11 @@ footer hr {
   }
   
   .hero-text .h1 {
-    line-height: 4rem;
+    line-height: 64px;
   }
   
   .hero-text p{
     font-weight: 600;
-
   }
 
   .hero-btn:hover {
@@ -801,6 +804,7 @@ footer hr {
   .features{
     padding-inline: var(--padding-small);
     padding-top: 0;
+    text-align: center;
   }
 
   .features h2 {
@@ -809,7 +813,7 @@ footer hr {
   }
 
   .features-icons {
-    gap: 3rem;
+    gap: var(--gap-features);
   }
    
   .features-icons a {
@@ -849,6 +853,30 @@ footer hr {
     height: 270px;
     object-position: center top;
     object-fit: fill;
+  }
+
+  .features-btn{
+    display: inline-block;
+    margin-inline: auto;
+    padding: 1rem 2rem;
+    background-color: var(--color-accent);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--font-color-light);
+    margin-top: 1.5rem;
+  }
+
+  .features-btn:hover{
+    background-color: var(--color-brown-accent);
+    color: var(--font-color-dark);
+    border: 1px solid var(--color-dark);
+    box-shadow: 1px 2px 2px var(--color-dark);
+    transition: 300ms ease;
+  }
+
+  .features-btn:active{
+    background-color: var(--color-dark);
+    color: var(--font-color-light);
   }
 
   .testimonials {
@@ -956,7 +984,7 @@ footer hr {
     border: none;
     border-radius: 5px;
   
-    margin: 2rem 0;
+    margin: 2rem 0 2rem 5.7rem;
     padding: 0.75rem 1rem;
   }
 
@@ -985,11 +1013,10 @@ footer hr {
   :root {
     --margin-cards-tutorials: 13rem;
     --font-size-title: 4rem;
-    --padding-small: 10rem;
   } 
 
   .hero-text{
-    padding-top: 10rem;
+    padding-top: calc(180px - 5rem);
   }
   
   .hero-text .h1{
