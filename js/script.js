@@ -246,7 +246,7 @@ let macarons = [
          //10
    },
    {
-      background: "url('/images/macarons-6.jpg')",
+      background: "url('/images/Macarons_box.jpg')",
       nombreProducto: "Box de regalo",
       descripcionProducto: "Un surtido de nuestros macarons más vendidas o la podés armar con tus preferidos. Vos decidís!"
       //6
@@ -391,7 +391,6 @@ let tortas = [
    descripcionProducto: "Masa de chocolate blanco con trozos de chocolate amargo y relleno de mousse de chocolate con leche." //2
 }
 ]
- 
 
 function Boda() {
    dropdownBtn.textContent = "Boda";
@@ -410,7 +409,6 @@ for (let i=0;i<8;i++) {
    let idBackground = background.toString()
    document.getElementById(idBackground).style.background = boda[i].background
    document.getElementById(idBackground).style.backgroundSize = "cover"
-
 }  
 }
 
@@ -554,17 +552,6 @@ for (let i=0;i<8;i++) {
    document.getElementById(idBackground).style.backgroundSize = "cover"
 }  
 }
-
-let buttons = document.querySelectorAll('button');
-let products = document.querySelectorAll('.product');
-
-buttons.forEach(button => {
-  button.addEventListener('click', e => {
-    products.forEach(product => {
-      product.style.display = product.id === e.target.dataset.product ? 'block' : 'none';
-    });
-  }); 
-});
 
 function dropdown() {
    document.getElementById("ulGallery").classList.toggle("show"); 

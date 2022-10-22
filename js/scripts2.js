@@ -34,6 +34,8 @@ document.getElementById("idheader").innerHTML = header
 let footer = `
 <div class="footer-top">
    <a class="footer-logo" href="index.html"><img src="/images/Logo-grande.png" alt=" PyCakes" /></a>
+
+   <a href="contact.html" class="footer-btn">Contacto</a>
       
    <ul class="footer-ul">
       <li class="footer-li">Horario de atención</li>
@@ -42,9 +44,8 @@ let footer = `
       <li class="footer-li">Domingos y feriados</li>
       <li class="footer-li horario">Cerrado</li>
    </ul>
-
-   <a href="contact.html" class="footer-btn">Contacto</a>
 </div>
+
    
    <hr />
          

@@ -6,16 +6,11 @@
 
 body {
   display: grid;
-  min-height: 100vh;
-  place-items: center;
   background-color: var(--color-background);
-  background-blend-mode: multiply;
-  background-size: cover;
 }
 
 main{
   margin-top: var(--header-height);
-  text-align: left;
   width: 100vw;
 }
 
@@ -30,11 +25,12 @@ main{
 
 .gallery {
   box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
-  padding-top: 2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   width: 100%;
 }
 
@@ -83,7 +79,7 @@ button{
 
 .gallery-items {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
@@ -108,6 +104,39 @@ button{
   transform: scale(1.05);
 }
 
+#card0{
+  background: url('/images/Black.jpg');
+  background-size: cover;
+}
+#card1{
+  background: url('/images/Cascada.jpg');
+  background-size: cover;
+}
+#card2{
+  background: url('/images/Elegante.jpg');
+  background-size: cover;
+}
+#card3{
+  background: url('/images/Especial.jpg');
+  background-size: cover;
+}
+#card4{
+  background: url('/images/Marrocan.jpg');
+  background-size: cover;
+}
+#card5{
+  background: url('/images/Naked.jpg');
+  background-size: cover;
+}
+#card6{
+  background: url('/images/Playera.jpg');
+  background-size: cover;
+}
+#card7{
+  background: url('/images/Pure-white.jpg');
+  background-size: cover;
+}
+
 .card-content {
   --padding: 1.5rem; 
   padding: var(--padding);
@@ -120,9 +149,11 @@ button{
   transform: translateY(65%);
 }
 
+
 @media screen and (min-width:1000px) {
 
   .gallery{
+    padding-inline: 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -134,7 +165,6 @@ button{
     flex-direction: column;
     gap: 0;
     padding-top: 2rem;
-    padding-inline: 2.5rem;
     width: auto;
   }
 
@@ -156,7 +186,8 @@ button{
     display: block;
     width: 150px;
     padding: 1rem;
-    transition: all 0 ease;
+    margin-left: 3rem;
+    transition: 300ms ease;
   }
 
   .a-gallery:hover {
@@ -168,10 +199,6 @@ button{
 
   .a-gallery:target{
     text-decoration: underline;
-  }
-
-  .gallery-items{
-    padding-right: 5rem;
   }
   
   @media (hover) {
