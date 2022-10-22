@@ -54,20 +54,17 @@
   padding: 0;
 }
 
-html{
-  width: 100vw;
-}
 
 body {
   background-color: var(--color-background);
   font-family: var(--font-text);
-  width: 100%;
+  width: 100vw;
 }
   
 main,
 header,
 footer {
-  width: 100%;
+  width: 100vw;
 }
 
 a {
