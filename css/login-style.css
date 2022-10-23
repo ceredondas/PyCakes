@@ -134,35 +134,6 @@ main{
   display: none;
 }
 
-/* HACER TODO RESPONSIVE */
-@media screen and (max-width: 850px){
-  main{
-      margin-top: 50px;
-  }
-  .caja__trasera{
-      max-width: 350px;
-      height: 300px;
-      flex-direction: column;
-      margin: auto;
-  }
-  .caja__trasera div{
-      margin: 0px;
-      position: absolute;
-  }
-   /*RESPONSIVE DE FORMULARIO*/
-  .contenedor__login-register{
-      top: -10px;
-      left: -5px;
-      margin: auto;
-   }
-   .contenedor__login-register form{
-      position: relative;
-
-   }
-}
-
-
-
 /* CREANDO LA VALIDACION DE DATOS*/
 
 
@@ -196,4 +167,43 @@ visibility: hidden;
 visibility: visible;
   
 }
+
+
+.data__signIn{
+  display: none;
+}
+
+
+
+
+/* HACER TODO RESPONSIVE */
+@media screen and (max-width: 850px){
+  main{
+      margin-top: 50px;
+  }
+  .caja__trasera{
+      max-width: 350px;
+      height: 300px;
+      flex-direction: column;
+      margin: auto;
+  }
+  .caja__trasera div{
+      margin: 0px;
+      position: absolute;
+  }
+   /*RESPONSIVE DE FORMULARIO*/
+  .contenedor__login-register{
+      top: -10px;
+      left: -5px;
+      margin: auto;
+   }
+   .contenedor__login-register form{
+      position: relative;
+
+   }
+}
+
+
+
+
 
