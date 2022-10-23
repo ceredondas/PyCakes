@@ -229,6 +229,8 @@ nav a:active {
    box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
 
    padding: var(--padding-features-top-bottom) var(--padding-small);
+   display: flex;
+   flex-direction: column;
 }
 
 .features-icons {
