@@ -1,3 +1,5 @@
+/* --------------------------------------------------------------------------- CINTIA --------------------------------------------------------------------------- */
+
 *,
 *::after,
 *::before {
@@ -8,7 +10,6 @@
 
 main {
    margin-top: 95px;
-   width: 100%;
 }
 
 .h1-contact {
@@ -23,8 +24,8 @@ main {
 .contact-info{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   margin: 1.5rem auto;
 }
 
@@ -37,7 +38,6 @@ main {
   gap:1rem;
   text-align: center;
   line-height: 1.5rem;
-  width: 100vw;
 }
 
 .contact-details i{
@@ -71,3 +71,5 @@ iframe{
     height: 75px;
   }
 }
+
+/* --------------------------------------------------------------FINAL CINTIA --------------------------------------------------------------------------- */

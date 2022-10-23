@@ -1,5 +1,6 @@
+//--------------------------------------------------------------------------- CINTIA ---------------------------------------------------------------------------
 let header = `
-<a href="index.html" class="logo"><img src="/images/Logo-nav.png" alt="Logo" /></a>
+<a href="index.html" class="logo"><img src="./images/Logo-nav.png" alt="Logo" /></a>
                
 <iconify-icon
 id="menu"
@@ -33,7 +34,7 @@ document.getElementById("idheader").innerHTML = header
 
 let footer = `
 <div class="footer-top">
-   <a class="footer-logo" href="index.html"><img src="/images/Logo-grande.png" alt=" PyCakes" /></a>
+   <a class="footer-logo" href="index.html"><img src="./images/Logo-grande.png" alt=" PyCakes" /></a>
 
    <a href="contact.html" class="footer-btn">Contacto</a>
       
@@ -45,9 +46,8 @@ let footer = `
       <li class="footer-li horario">Cerrado</li>
    </ul>
 </div>
-
-   
-   <hr />
+ 
+<hr />
          
 <div class="footer-bottom">
    
@@ -107,9 +107,6 @@ let footer = `
 `
 document.getElementById("idfooter").innerHTML = footer
 
-
-
-
 const menu = document.querySelector("#menu");
 const close = document.querySelector("#closed");
 const nav = document.querySelector("nav");
@@ -119,11 +116,11 @@ function openNav(){
 }
 
 menu.addEventListener("click", openNav); 
-//=> {
- // nav.classList.add("open-nav")}
 
 close.addEventListener("click", () => {
   nav.classList.remove("open-nav")
 })
+
+//--------------------------------------------------------------FINAL CINTIA ------------------------------------------------------
 
 

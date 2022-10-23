@@ -1,3 +1,5 @@
+//--------------------------------------------------------------------------- CINTIA ---------------------------------------------------------------------------
+
 let boda = [
   {
      background: "url('/images/Black.jpg')",
@@ -88,7 +90,7 @@ let cookies = [
   },
   {
      background: "url('/images/Romero_y_almendras.jpg')",
-     nombreProducto: "Romero y almendras",
+     nombreProducto: "Romero",
      descripcionProducto: "Un sabor distinto solo apto para los que estan dispuestos a probar cosas nuevas. Te animás?"
      //8
   },
@@ -577,3 +579,5 @@ window.onclick = function(event) {
     }
   }
 }
+
+//--------------------------------------------------------------FINAL CINTIA ----------------------------------------------------------------
