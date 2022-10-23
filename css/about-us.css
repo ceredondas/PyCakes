@@ -91,7 +91,7 @@ body{
 /* Maneja el lado slider izquierdo */
 .slider .wrapper .left > div p{
   color: #555;
-  font-size: 15px;
+  font-size: 30px;
   /* height: 30%; */
 }
 .slider .wrapper .right > div img{
@@ -111,6 +111,7 @@ body{
   margin-left: 60%;
   line-height: 10px;
   text-align: center;
+  margin-top: 1%;
 
   
 }
@@ -123,6 +124,20 @@ body{
 }
 
 /* HACER TODO RESPONSIVE */
+@media screen and (max-width: 1200px){
+  .slider .wrapper .left > div h2{
+    font-size: 40px;
+  }
+
+  .slider .wrapper .left > div p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 25px;
+    
+    /* height: 30%; */
+  }
+}
+
 
 @media screen and (max-width: 900px){
   .slider .wrapper .left {
@@ -146,7 +161,7 @@ body{
   }
 
   .slider .wrapper .left > div p{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
     line-height: 50px;
     
@@ -163,7 +178,7 @@ body{
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
   .slider .wrapper .left {
     margin-top: 5%;
     width: 100%;
