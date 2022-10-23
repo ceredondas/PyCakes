@@ -214,3 +214,13 @@ body{
   }
 
 }
+@media screen and (max-height: 600px){
+
+  .slider .wrapper .left > div p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 110%;
+    
+    /* height: 30%; */
+  }
+}
