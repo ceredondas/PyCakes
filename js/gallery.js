@@ -380,7 +380,7 @@ let tortas = [
 {
   background: "url('/images/Romántica.jpg')",
   nombreProducto: "Romántica",
-  descripcionProducto: "Dos o tres pisos, con flores de buttercream hechas a mano. Paleta de colores personalizada." //5
+  descripcionProducto: "Dos o tres pisos. Flores de buttercream hechas a mano. Paleta de colores personalizada." //5
 },
 {
   background: "url('/images/Rústica.jpg')",
