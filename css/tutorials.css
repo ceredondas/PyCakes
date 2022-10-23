@@ -103,17 +103,9 @@ iframe {
 
    :root {
       --margin-xs:auto;
-      --padding-small: 5rem;
      }
 
    .card-video {
       max-width: 864px;
    }
-}
-
-@media screen and (min-width: 1200px){
-
-   :root {
-      --padding-small: 10rem;
-     } 
 }

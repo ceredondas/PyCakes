@@ -123,7 +123,7 @@ nav {
   right: 0;
   top: 0;
 
-  width: 80%;
+  width: 60%;
   height: 100vh;
   
   text-transform: uppercase;
@@ -415,18 +415,30 @@ footer a {
 }
 
 .footer-logo img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 
   border-radius: 50%;
   border: 3px solid #fff;
   object-fit: cover;
 
-  margin: 2.5rem auto;
+  margin: 0rem auto;
 }
 
 .footer-btn{
-  display: none;
+  display: block;
+  background-color: var(--color-background);
+
+  color: var(--font-color-dark);
+  font-size: var(--font-size-button);
+  font-family: var(--font-text);
+  font-weight: 500;
+
+  border: none;
+  border-radius: 5px;
+
+  margin: 2rem 2.85rem;
+  padding: 0.75rem 1rem;
 }
 
 .footer-ul{
@@ -550,20 +562,6 @@ footer hr {
   }
 }
 
-@media screen and (min-width:560px) {
-  .footer-top{
-    padding-inline: var(--padding-small);
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .footer-ul{
-    text-align: left;
-    align-items: flex-end;
-  }  
-}
- 
   @media screen and (min-width: 760px) {
 
   :root {
@@ -604,6 +602,30 @@ footer hr {
   }
 }  
 
+@media screen and (min-width:800px) {
+  .footer-top{
+    padding-inline: var(--padding-small);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .footer-logo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer-ul{
+    text-align: left;
+    align-items: flex-end;
+  }  
+
+  .horario{
+    margin-bottom: 0;
+  }
+  
+}
          
 @media screen and (min-width: 1000px){
  
@@ -928,22 +950,6 @@ footer hr {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .footer-btn{
-    display: block;
-    background-color: var(--color-background);
-  
-    color: var(--font-color-dark);
-    font-size: var(--font-size-button);
-    font-family: var(--font-text);
-    font-weight: 500;
-  
-    border: none;
-    border-radius: 5px;
-  
-    margin: 2rem 2.85rem;
-    padding: 0.75rem 1rem;
   }
 
   .footer-btn:hover {

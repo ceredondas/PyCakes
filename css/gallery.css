@@ -14,24 +14,49 @@ main{
   width: 100vw;
 }
 
+.gallery-container{
+  box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
+}
+
 .h1-gallery {
   font-family: var(--font-title);
-   font-size: 2.5em;
-   margin: auto 0 0 0;
-   padding: 1.5rem var(--padding-small);
-   color: var(--font-color-light);
-   background-color: var(--color-dark);
+  font-size: 2.5em;
+  margin: auto 0 0 0;
+  padding: 1.5rem var(--padding-small);
+  color: var(--font-color-light);
+  background-color: var(--color-dark);
 }
 
 .gallery {
-  box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
-  padding: 2rem;
+  padding-inline: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   width: 100%;
+}
+
+.breadcrumbs-text{
+  padding: 2rem var(--padding-small) 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.breadcrumb-item{
+  color: var(--color-brown-accent);
+
+}
+.breadcrumb-item::after{
+  content: "/";
+  margin: 0 10px;
+  color: lightgrey;
+}
+
+.breadcrumb-active{
+  color: var(--color-accent);
+  font-weight: 500;
 }
 
 button{
@@ -82,7 +107,7 @@ button{
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
   text-align: left;
 }
 
@@ -152,6 +177,12 @@ button{
 
 @media screen and (min-width:1000px) {
 
+  .breadcrumbs-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
   .gallery{
     padding-inline: 1.5rem;
     display: flex;
@@ -164,7 +195,7 @@ button{
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding-top: 2rem;
+    padding-top: 1rem;
     width: auto;
   }
 

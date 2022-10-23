@@ -8,6 +8,13 @@
       <link rel="stylesheet" href="css/main.css" />
       <link rel="stylesheet" href="css/gallery.css" />
 
+      <!-- Google fonts: Montserrat -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700;900&family=Montserrat:wght@400;500;600;700&family=Pacifico&display=swap"
+      rel="stylesheet">
+
       <!-- ICONOS: iconify -->
       <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
 
@@ -40,80 +47,85 @@
          <main>
             <h1 class="h1-gallery">Nuestros productos</h1>
 
-            <div class="gallery">
-               <div class="dropdown">
-                  <button
-                     onclick="dropdown()"
-                     class="dropdown-btn"
-                     id="dropdownBtn"
-                  >
-                     Boda <i class="fa-solid fa-angle-down"></i>
-                  </button>
+            <div class="gallery-container">
 
-                  <div class="ul-gallery" id="ulGallery">
-                     <p class="categories">Categoría</p>
-                     <a class="a-gallery" onclick="Boda()">Boda</a>
-                     <a class="a-gallery" onclick="Cookies()">Cookies</a>
-                     <a class="a-gallery" onclick="Cupcakes()">Cupcakes</a>
-                     <a class="a-gallery" onclick="Infantiles()">Infantiles</a>
-                     <a class="a-gallery" onclick="Macarons()">Macarons</a>
-                     <a class="a-gallery" onclick="Postres()">Postres</a>
-                     <a class="a-gallery" onclick="Tartas()">Tartas</a>
-                     <a class="a-gallery" onclick="Tortas()">Tortas</a>
-                  </div>
+               <div class="breadcrumbs">
+                  <ul class="breadcrumbs-text">
+                     <li class="breadcrumb-item">Galeria</li>
+                     <li id="breadcrumb-selection" class="breadcrumb-active">Boda</li>
+                  </ul>
                </div>
 
-               <div class="gallery-items">
-                  <div class="card" id="card0">
-                     <div class="card-content">
-                        <h2 class="card-title" id="productName0">Black</h2>
-                        <p class="card-text" id="productDescription0">Recubierta en fondant negro se le agregan distintas texturas y objetos que la hagan destacar aún más.</p>
+               <div class="gallery">
+                  <div class="dropdown">
+                     <button
+                        onclick="dropdown()"
+                        class="dropdown-btn"
+                        id="dropdownBtn"
+                     >
+                        Boda <i class="fa-solid fa-angle-down"></i>
+                     </button>
+                     <div class="ul-gallery" id="ulGallery">
+                        <p class="categories">Categoría</p>
+                        <a class="a-gallery" onclick="Boda()">Boda</a>
+                        <a class="a-gallery" onclick="Cookies()">Cookies</a>
+                        <a class="a-gallery" onclick="Cupcakes()">Cupcakes</a>
+                        <a class="a-gallery" onclick="Infantiles()">Infantiles</a>
+                        <a class="a-gallery" onclick="Macarons()">Macarons</a>
+                        <a class="a-gallery" onclick="Postres()">Postres</a>
+                        <a class="a-gallery" onclick="Tartas()">Tartas</a>
+                        <a class="a-gallery" onclick="Tortas()">Tortas</a>
                      </div>
                   </div>
 
-                  <div class="card card2" id="card1">
-                     <div class="card-content">
-                        <h2 class="card-title" id="productName1">Cascada</h2>
-                        <p class="card-text" id="productDescription1">Decorada con flores en colores pastel en forma de cascada. Sabores y cantidad de pisos personalizados.</p>
+                  <div class="gallery-items">
+                     <div class="card" id="card0">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName0">Black</h2>
+                           <p class="card-text" id="productDescription0">Recubierta en fondant negro se le agregan distintas texturas y objetos que la hagan destacar aún más.</p>
+                        </div>
                      </div>
-                  </div>
-                  <div class="card card3" id="card2">
-                     <div class="card-content">
-                        <h2 class="card-title" id="productName2">Elegante</h2>
-                        <p class="card-text" id="productDescription2">Cubierta con fondant blanco, filigranas, perlas y flores. Sabores y cantidad de pisos personalizados.</p>
+                     <div class="card card2" id="card1">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName1">Cascada</h2>
+                           <p class="card-text" id="productDescription1">Decorada con flores en colores pastel en forma de cascada. Sabores y cantidad de pisos personalizados.</p>
+                        </div>
                      </div>
-                  </div>
-
-                  <div class="card card4" id="card3">
-                     <div class="card-content">
-                        <h2 class="card-title" id="productName3">Especial</h2>
-                        <p class="card-text" id="productDescription3">Masa de naranja y romero con relleno de curd de naranja. Las láminas de oro la hacen una torta especial.</p>
+                     <div class="card card3" id="card2">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName2">Elegante</h2>
+                           <p class="card-text" id="productDescription2">Cubierta con fondant blanco, filigranas, perlas y flores. Sabores y cantidad de pisos personalizados.</p>
+                        </div>
                      </div>
-                  </div>
-                  <div class="card card5" id="card4">
-                     <div class="card-content">
-                        <h2 class="card-title" id="productName4">Maroccan</h2>
-                        <p class="card-text" id="productDescription4">Decorado con fondant calado con patrones marroquies y rosas Blush. Paleta de colores personalizada.</p>
+                     <div class="card card4" id="card3">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName3">Especial</h2>
+                           <p class="card-text" id="productDescription3">Masa de naranja y romero con relleno de curd de naranja. Las láminas de oro la hacen una torta especial.</p>
+                        </div>
                      </div>
-                  </div>
-
-                  <div class="card card6" id="card5">
-                     <div class="card-content">
-                        <h2 class="card-title" id="productName5">Naked</h2>
-                        <p class="card-text" id="productDescription5">Posee un leve recubrimiento de buttercream y flores naturales. Sabores y cantidad de pisos personalizados.</p>
+                     <div class="card card5" id="card4">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName4">Maroccan</h2>
+                           <p class="card-text" id="productDescription4">Decorado con fondant calado con patrones marroquies y rosas Blush. Paleta de colores personalizada.</p>
+                        </div>
                      </div>
-                  </div>
-                  <div class="card card7" id="card6">
-                     <div class="card-content">
-                        <h2 class="card-title" id="productName6">Playera</h2>
-                        <p class="card-text" id="productDescription6">Para novios relajados que lo único que quieren es estar bajo el sol. Ideal para una boda en la playa.</p>
+                     <div class="card card6" id="card5">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName5">Naked</h2>
+                           <p class="card-text" id="productDescription5">Posee un leve recubrimiento de buttercream y flores naturales. Sabores y cantidad de pisos personalizados.</p>
+                        </div>
                      </div>
-                  </div>
-
-                  <div class="card card8" id="card7">
-                     <div class="card-content">
-                        <h2 class="card-title" id="productName7">Pure white</h2>
-                        <p class="card-text" id="productDescription7">Cubierta con fondant, filigranas y flores blancas. Sabores y cantidad de pisos personalizados.</p>
+                     <div class="card card7" id="card6">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName6">Playera</h2>
+                           <p class="card-text" id="productDescription6">Para novios relajados que lo único que quieren es estar bajo el sol. Ideal para una boda en la playa.</p>
+                        </div>
+                     </div>
+                     <div class="card card8" id="card7">
+                        <div class="card-content">
+                           <h2 class="card-title" id="productName7">Pure white</h2>
+                           <p class="card-text" id="productDescription7">Cubierta con fondant, filigranas y flores blancas. Sabores y cantidad de pisos personalizados.</p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -123,7 +135,7 @@
          <footer id="idfooter"></footer>
       </div>
 
-      <script src="./js/script.js"></script>
+      <script src="./js/gallery.js"></script>
       <script src="./js/scripts2.js"></script>
    </body>
 </html>
