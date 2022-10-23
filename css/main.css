@@ -61,10 +61,10 @@ html {
 body {
    background-color: var(--color-background);
    font-family: var(--font-text);
-   width: 100%;
+   max-width: 100%;
 }
 
-main,
+.index,
 header,
 footer {
    width: 100%;
@@ -78,22 +78,9 @@ li {
    list-style: none;
 }
 
-.container {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-areas:
-      "header"
-      "hero"
-      "features"
-      "testimonials"
-      "footer";
-}
-
 /*---------------------------------HEADER---------------------------------*/
 
 header {
-   grid-area: header;
-
    background: var(--color-background-nav);
 
    position: fixed;
@@ -184,8 +171,6 @@ nav a:active {
 /*-------------------------------------------HERO-------------------------------------------*/
 
 .hero {
-   grid-area: hero;
-
    background: url("../images/postres-7.jpg");
 
    background-size: cover;
@@ -193,7 +178,7 @@ nav a:active {
    background-position: center 225px;
 
    height: 90vh;
-   max-width: 100%;
+   width: 100%;
 
    margin-top: 95px;
 }
@@ -240,8 +225,6 @@ nav a:active {
 /* ---------------------------------------FINAL HERO--------------------------------------- */
 /* --------------------------------------SECTION: FEATURES-------------------------------------- */
 .features {
-   grid-area: features;
-
    background-color: rgba(193, 162, 141, 0.1);
    box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
 
@@ -296,8 +279,6 @@ nav a:active {
 /*-------------------------------------------TESTIMONIALS-------------------------------------------*/
 
 .testimonials {
-   grid-area: testimonials;
-
    background: url("../images/fondo-xs-claro.png");
    background-position: center;
    background-size: cover;
@@ -395,8 +376,6 @@ nav a:active {
 /*----------------------------------------------FOOTER----------------------------------------------*/
 
 footer {
-   grid-area: footer;
-
    background-color: var(--color-accent);
    color: var(--font-color-light);
 
