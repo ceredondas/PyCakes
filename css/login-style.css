@@ -3,11 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body{
-  background-image: url(../images/macarons-6.jpg);
+  background-image: url("../images/macarons-6.jpg");
   background-size: cover; /*HACE QUE CUBRA TODO EL FONDO */
   background-repeat: no-repeat; /*El fondo no se repite*/
   background-position: center;
@@ -19,6 +19,7 @@ main{
   padding: 20px;
   margin: auto;
   margin-top: 100px;
+  /* height: calc(100vh - 85px); */
 }
 
 .contenedor__todo{
