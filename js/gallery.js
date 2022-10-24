@@ -55,7 +55,7 @@ let cookies = [
   {
      background: "url('/images/Avenas_y_pasas.jpg')",
      nombreProducto: "Avena y pasas",
-     descripcionProducto: "Un gustito para los que prefieren algo menos empalagoso y un poquito más sano."
+     descripcionProducto: "Con azúcar mascabo. Un gustito para los que prefieren algo menos empalagoso y un poquito más sano."
      //6
   },
   {
@@ -380,7 +380,7 @@ let tortas = [
 {
   background: "url('/images/Romántica.jpg')",
   nombreProducto: "Romántica",
-  descripcionProducto: "Dos pisos, con flores de buttercream hechas a mano. Paleta de colores personalizada." //5
+  descripcionProducto: "Dos o tres pisos. Flores de buttercream hechas a mano. Sabores a elección. Paleta de colores personalizada." //5
 },
 {
   background: "url('/images/Rústica.jpg')",
