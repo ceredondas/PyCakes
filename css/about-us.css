@@ -16,6 +16,12 @@
   box-sizing: content-box;     
 }
 
+
+
+/* html {
+  max-width: 100%;
+} */
+
 body{
   background-color:var(--background-color);
   font-family: var(--font-text);
@@ -124,6 +130,15 @@ body{
   text-align: center;
 }
 
+#algoDeNosotros{
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 100%;
+}
+
+
+
+
 /* HACER TODO RESPONSIVE */
 @media screen and (max-width: 1200px){
   .slider .wrapper .left > div h2{
@@ -164,7 +179,7 @@ body{
   .slider .wrapper .left > div p{
     font-size: 20px;
     margin-bottom: 10px;
-    line-height: 50px;
+    line-height: 130%;
     
     /* height: 30%; */
   }
