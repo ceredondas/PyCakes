@@ -23,7 +23,7 @@
 /*------------------MAIN------------------*/
 
 .main {
-  background: url(../images/fondo-xs-claro.png);
+  background: url("../images/fondo-xs-claro.png");
   background-size: cover;
   background-color: rgba(193, 162, 141, 0.1);
   box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
@@ -96,7 +96,7 @@
   justify-content: right;
   text-align: center;
   height: max-content;
-  background-image: url(../images/1_cupcake-fondo-oscuro.jpg);
+  background-image: url("../images/1_cupcake-fondo-oscuro.jpg");
   background-size: cover;
   background-position-y: center;
   border-radius: 30px;
