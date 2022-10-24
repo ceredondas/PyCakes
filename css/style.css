@@ -1,187 +1,67 @@
-/*----MAGIA----------DE-------------CINTIA---------------------------------*/
+/*------------------FLAVIA MICAELA SANDOVAL------------------*/
 
+/*------------------STYLE GENERAL------------------*/
 :root {
-  --color-background: #f7f6f6;
-  --color-background-button: rgb(96, 1, 74);
-  --color-background-footer: #60014a;
-  --color-background-nav: rgba(247, 246, 246, 1);
-
-  --color-button: rgb(255, 255, 255);
-  --color-brown-accent: rgb(193, 162, 141);
-  --color-dark: rgba(60, 42, 30, 1);
-  --color-footer: rgb(247, 246, 246);
-  --color-nav-logo: rgba(60, 42, 30, 1);
-  --color-shadow: rgba(135, 109, 91, 0.5);
-  --color-subtitle: #60014a;
-  --color-title: #60014a;
-
-  --font-size-button: 0.9rem;
-  --font-size-features-btn: 0.60rem;
-  --font-size-footer-title: 1.25rem;
-  --font-size-footer-p: 0.5rem;
-  --font-size-name: 1.5rem;
-  --font-size-nav: 1.5rem;
-  --font-size-nav-p: 0.75rem;
-  --font-size-p: 1rem;
-  --font-size-title: 3.5rem;
 
   --font-title: "Dancing Script", cursive;
   --font-text: "Montserrat", sans-serif;
 
-  --gap-features: 2rem;
+  --font-size-title: 3.5rem;
+  --font-size-p: 1rem;
+  --font-size-medium: 1.15rem;
+  --font-size-h2: 2.5rem;
 
-  --margin-sides: 2.5rem;
-  --margin-features: 0.25rem;
-  --margin-cards-tutorials: 1.5rem;
+  --color-shadow: rgba(135, 109, 91, 0.502);
+  --color-accent: rgb(96, 1, 74);
+  --color-brown-accent: rgb(193, 162, 141);
 
-  --padding-small: 1.5rem;
+  --font-color-accent: rgb(96, 1, 74);
+  --font-color-dark: rgba(60, 42, 30, 1);
+  --font-color-light: rgb(247, 246, 246);
 }
 
-/*------------------------RESET----------------------- */
-*,
-*::before,
-*::after {
+/*------------------MAIN------------------*/
+
+.main {
+  background: url(../images/fondo-xs-claro.png);
+  background-size: cover;
+  background-color: rgba(193, 162, 141, 0.1);
+  box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
+  width: 100%;
+  font-size: var(--font-size-p);
+  margin: auto;
+  padding-bottom: 4rem;
+}
+
+/*------------------INTRO------------------*/
+.intro {
+  width: 100%;
+  background: url("../images/1_tortas-fondo-oscuro.jpg");
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: var(--color-background);
-  font-family: var(--font-text);
-  margin: 0;
-  padding: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-main {
-  width: 100vw;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "header"
-    "intro"
-    "form"
-    "footer";
-}
-
-
-/*-----------NO--------TOCO-------EL----------HEADER--------------------------------------------*/
-
-header {
-  background-color: var(--color-background-nav);
-
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  padding: 20px var(--padding-small);
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 100px;
-}
-
-#menu {
-  padding: auto 0;
-}
-
-nav {
-  background: var(--color-background-footer);
-
-  position: fixed;
-  right: 0;
-  top: 0;
-
-  width: 60%;
-  height: 100vh;
-
-  text-transform: uppercase;
-  transform: translateX(100%);
-  transition: transform .5s ease-in-out;
-}
-
-#close {
-  float: right;
-  margin: 2rem;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 8em;
-}
-
-nav ul li a {
-  color: var(--color-background);
-  font-size: var(--font-size-nav);
-  padding: 0.75em 2em;
-  display: block;
-}
-
-nav a:active {
-  background: #9D4492;
-}
-
-.nav-icons {
-  display: flex;
-  gap: 5rem;
-  text-align: center;
-  padding: 0.75rem 3rem;
-}
-
-.nav-icons a {
-  padding: 1.5rem 0;
-}
-
-.nav-icons-text {
-  font-size: var(--font-size-nav-p);
-  color: var(--color-background);
-  text-transform: capitalize;
-  padding: 0.5rem 0 2rem;
-}
-
-.nav-icons a i {
-  color: var(--color-background);
-  font-size: 30px;
-}
-
-/*-----------------------------------------FINAL HEADER-----------------------------------------*/
-/*--------------------------------------------INTRO-------------------------------------------*/
-
-.intro {
-  grid-area: intro;
-  height: calc(100vw-10vw);
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: url("../images/1_macarons.jpg");
-  background-position: 50vw;
-  background-size: contain;
-  background-repeat: no-repeat;
+.intro img {
+  position: absolute;
+  opacity: 0.8;
+  width: 50%;
+  height: 30rem;
+  padding: 8vw 0vw 0vw 2vw;
 }
 
 .intro-text {
-  color: var(--color-title);
+  color: var(--color-accent);
   margin-top: 3vw;
   margin-right: 35vw;
   padding: 6vw;
   text-align: left;
   position: relative;
+  width: 50%;
 }
 
 .intro-text .h1 {
@@ -192,500 +72,77 @@ nav a:active {
 }
 
 .intro-text p {
-  color: var(--color-subtitle);
-  font-size: var(--font-size-p);
+  font-family: var(--font-text);
+  color: var(--color-accent);
+  font-size: var(--font-size-medium);
   line-height: 1.5rem;
-
   padding-top: 1.5rem;
+  font-weight: 430;
 }
 
-/* ---------------------------------------FINAL INTRO--------------------------------------- */
-/* --------------------------------------SECTION: FORMULARIO-------------------------------------- */
-.form {
-  grid-area: form;
-  background-color: rgba(193, 162, 141, 0.1);
-  box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
-  width: 100%;
-  font-size: var(--font-size-p);
-  padding: 3rem 0rem;
-  margin: auto;
-}
-
-.form-title {
-  color: var(--color-subtitle);
+/*------------------FORMULARIO------------------*/
+.presupuesto-title {
+  color: var(--color-accent);
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
   text-align: center;
+  padding: 2rem;
+  padding-top: 4rem;
+
 }
 
 .formulario {
-  width: max-content;
-  margin: auto;
+  display: grid;
+  justify-content: right;
+  text-align: center;
+  height: max-content;
+  background-image: url(../images/1_cupcake-fondo-oscuro.jpg);
+  background-size: cover;
+  background-position-y: center;
+  border-radius: 30px;
+  margin:0 16%;
+  padding: 2rem;
 }
 
-.formulario fieldset {
-margin: 0%;
+.formulario select {
   background-color: rgb(253, 251, 249);
   box-shadow: inset 0px 0px 5px 2px var(--color-shadow);
-  padding: 3px 20px 20px 20px;
+  padding: 10px 0;
   border: 0;
+  margin: 0.5rem 0;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+
+}
+.select, option {
+ text-align: center;
+ color: var(--color-accent);
+ font-size: 1rem;
+
 }
 
-.formulario legend {
+.formulario level {
   font-size: var(-font-size-nav-p);
-  color: var(--color-subtitle);
-  padding-top: 40px;
-  text-align: center;
+  color: var(--font-color-light);
+  font-weight: 600;
+  text-shadow: 0px 0px 10px var(--color-accent)
 }
 
-.formulario p {
-  font-size: smaller;
-
-}
-
-
-
-/*------------------------------------------FINAL FORMULARIO------------------------------------------*/
-
-/*--------------NO------TOCO-------EL-----------FOOTER-------------POR-----------AHORA--------------*/
-
-footer {
-  grid-area: footer;
-
-  background-color: var(--color-background-footer);
-  color: var(--color-footer);
-
-  padding-bottom: 2vh;
-  padding-inline: var(--padding-small);
-
-}
-
-footer a {
-  color: var(--color-footer);
-}
-
-.footer-top {
+.formulario button{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto;
 }
-
-.footer-logo img {
-  width: 12em;
-  height: 12em;
-
-  border-radius: 50%;
-  border: 3px solid #fff;
-  object-fit: cover;
-
-  margin: 2.5em 0;
-}
-
-footer ul li {
-  list-style: none;
-
-  padding: 2.5px 0;
-}
-
-footer ul li:first-child {
-  font-size: var(--font-size-footer-title);
-  font-weight: bold;
-  text-transform: uppercase;
-
-  padding: 5px 0;
-}
-
-footer hr {
-  background-image: linear-gradient(90deg, transparent, var(--color-background), transparent);
-  border: none;
-
-  height: 1px;
-}
-
-.social-media {
-  width: 50%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-
-  margin: 1.5rem auto;
-}
-
-.social-icon {
-  position: relative;
-}
-
-.social-icon a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: var(--color-background);
-  border-radius: 50%;
+.resultado{
+  color: var(--font-color-light);
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
   text-align: center;
-  transform: translateY(0) scale(1);
-  transition: 300ms ease;
+  margin: 2rem 16%;
+  padding: 2rem;
+  border-radius: 30px;
+  background-color: var(--color-accent);
+  height: 9rem;
 }
 
-.social-icon:hover a {
-  transform: translateY(-6px) scale(1.2);
-}
-
-.social-icon a i {
-  font-size: 18px;
-  color: var(--color-background-footer);
-  line-height: 40px;
-}
-
-.social-icon p {
-  color: var(--color-background);
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  z-index: -1;
-
-  transform: translate(-50%, -50%) scale(0);
-  transition: 300ms ease;
-}
-
-.social-icon:hover p {
-  transform: translate(-50%, 90%) scale(1);
-  z-index: 5;
-}
-
-.footer-small-text p {
-  display: block;
-  margin-left: 0.75rem;
-
-  font-size: var(--font-size-footer-p);
-}
-
-/*-------------------------------------------FINAL FOOTER-------------------------------------------*/
-
-.open-nav {
-  transform: translateX(0);
-}
-
-@media screen and (min-width: 450px) {
-  :root {
-    --margin-sides: 2.5rem;
-  }
-
-  .hero {
-    background-position: center 120px;
-  }
-}
-
-@media screen and (min-width:500px) {
-  :root {
-    --margin-cards-tutorials: 3rem;
-    --padding-small: 3rem;
-  }
-}
-
-@media screen and (min-width: 760px) {
-
-  :root {
-    --margin-cards-tutorials: 4rem;
-    --padding-small: 4rem;
-  }
-
-  .menu {
-    display: none;
-  }
-
-
-  .hero {
-    background-position: center 0;
-  }
-
-  .hero-text {
-    margin: 0 3em;
-  }
-
-  .h1 {
-    font-size: 50px;
-    line-height: 20em;
-  }
-
-  .features-title {
-    display: block;
-    color: var(--color-dark);
-    font-family: var(--font-title);
-    font-size: 40px;
-    padding: 0 1.5rem 1.25rem;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .features-icons {
-    display: inline-flex;
-    align-content: center;
-  }
-
-  .icons-left {
-    margin-right: 0;
-  }
-
-  .icons-right {
-    margin-left: 7px;
-  }
-}
-
-
-@media screen and (min-width: 1000px) {
-
-  :root {
-    --margin-cards-tutorials: 6.5rem;
-    --padding-small: 5rem;
-    --font-size-features-btn: 15px;
-  }
-
-  .hero {
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    width: 50vw;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 4rem;
-  }
-
-  #menu,
-  #closed,
-  .nav-icons-text {
-    display: none;
-  }
-
-  .logo {
-    padding: 1rem 0;
-  }
-
-  ul,
-  .nav-icons {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  ul li,
-  a {
-    text-decoration: none;
-    list-style: none;
-    text-transform: capitalize;
-  }
-
-  nav {
-    display: flex;
-    background-color: var(--color-background);
-    transform: translateX(0%);
-    position: unset;
-    width: auto;
-    height: auto;
-  }
-
-  nav ul {
-    margin-top: 0em;
-  }
-
-  nav ul li {
-    position: relative;
-    margin-top: 1rem;
-  }
-
-  nav ul li:last-child {
-    margin-right: 2rem;
-  }
-
-  nav ul li a {
-    padding: 0;
-  }
-
-  .pages {
-    color: var(--color-background-footer);
-    font-size: 1rem;
-    margin-inline: 1.5rem;
-  }
-
-  .pages:after {
-    content: "";
-    position: absolute;
-    background-color: var(--color-background-footer);
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: 15px;
-    transition: 300ms;
-  }
-
-  .pages:hover {
-    font-weight: bold;
-  }
-
-  .pages:hover:after {
-    width: 100%;
-  }
-
-  .nav-icons {
-    gap: 1.5rem;
-    padding: 0;
-  }
-
-  .nav-icons a {
-    padding: 0;
-  }
-
-  .nav-icons a:hover {
-    background-color: var(--color-background-footer);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-  }
-
-  .nav-icons a i {
-    font-size: 1.5rem;
-    padding: 1rem;
-    color: var(--color-background-footer);
-  }
-
-  .nav-icons a i:hover {
-    color: var(--color-background);
-  }
-
-  .features {
-    padding-inline: 4.5rem;
-  }
-
-  .features h2 {
-    padding: 1.5rem 0 2.5rem;
-    text-align: center;
-  }
-
-  .features-icons {
-    gap: 3rem;
-  }
-
-  .features-icons a {
-    background-color: var(--color-background);
-    box-shadow: 0px 4px 4px var(--color-shadow);
-    border-radius: 5px;
-
-    width: 188px;
-    height: 300px;
-    margin-bottom: 1rem;
-
-    color: var(--color-nav-logo);
-    font-size: var(--font-size-features-btn);
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-
-    overflow: hidden;
-
-    transform: scale(1);
-    transition: 300ms ease;
-  }
-
-  .features-icons a:hover {
-    transform: scale(1.05);
-  }
-
-  .features-icons picture img {
-    position: relative;
-
-    width: 188px;
-    height: 270px;
-    object-position: center top;
-    object-fit: fill;
-  }
-
-  .testimonials {
-    overflow-x: auto;
-    scroll-snap-type: none;
-  }
-
-  .testimonials-title {
-    display: block;
-    color: var(--color-dark);
-    font-family: var(--font-title);
-    font-size: 40px;
-    padding: 1.5rem 1.25rem;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .swipe-container {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-  }
-
-  .cardAndImage {
-    width: 90%;
-    scroll-behavior: none;
-    border: none;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .cardAndImage:last-child {
-    margin-bottom: 3rem;
-  }
-
-  .card {
-    flex-direction: row;
-    gap: 0;
-    padding: 1.5rem;
-  }
-
-  .person {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 230px;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
-
-  .name,
-  .event {
-    padding: 0;
-  }
-
-  .name {
-    font-size: 1.5em;
-  }
-
-  .quotes-open {
-    left: 0;
-  }
-
-  .comment p {
-    text-align: left;
-  }
-
-  #swipe {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-
-  :root {
-    --margin-cards-tutorials: 13rem;
-    --padding-small: 10rem;
-  }
-
-}
-
-/*-------------------------------------------FINAL CINTIA-------------------------------------------*/
