@@ -16,11 +16,11 @@
   box-sizing: content-box;     
 }
 
-
 body{
   background-color:var(--background-color);
   font-family: var(--font-text);
   color: var(--title-color);
+  width: 100%;
 }
 .slider{
   width: 100%;
@@ -65,7 +65,7 @@ body{
   height: 100%;
   display: flex;
   line-height: 45px;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .slider .wrapper .left,
@@ -85,6 +85,7 @@ body{
   justify-content: center;
   flex-direction: column;
   padding: 0px 100px 0px 50px;
+  /* width: 80%; */
 }
 .slider .wrapper .left > div h2{
   font-size: 50px;
@@ -93,9 +94,7 @@ body{
 /* Maneja el lado slider izquierdo */
 .slider .wrapper .left > div p{
   color: #555;
-  font-size: 25px;
-  line-height: 140%;
-  text-align:justify ;
+  font-size: 30px;
   /* height: 30%; */
 }
 .slider .wrapper .right > div img{
@@ -143,7 +142,7 @@ body{
   }
 
   .slider .wrapper .left > div p{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
     line-height: 25px;
     
