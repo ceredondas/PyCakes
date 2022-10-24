@@ -1,5 +1,5 @@
 let header = `
-<a href="index.html" class="logo"><img src="/images/Logo-nav.png" alt="Logo" /></a>
+<a href="index.html" class="logo"><img src="/PyCakes/images/Logo-nav.png" alt="Logo" /></a>
                
 <iconify-icon
 id="menu"
@@ -33,7 +33,7 @@ document.getElementById("idheader").innerHTML = header
 
 let footer = `
 <div class="footer-top">
-   <a class="footer-logo" href="index.html"><img src="/images/Logo-grande.png" alt=" PyCakes" /></a>
+   <a class="footer-logo" href="index.html"><img src="/PyCakes/images/Logo-grande.png" alt=" PyCakes" /></a>
       
    <ul class="footer-ul">
       <li class="footer-li">Horario de atención</li>
