@@ -2,49 +2,49 @@
 
 let boda = [
   {
-     background: "url('/images/Black.jpg')",
+     background: "url('../images/Black.jpg')",
      nombreProducto: "Black",
      descripcionProducto: "Recubierta en fondant negro se le agregan distintas texturas y objetos que la hagan destacar aún más."
      //10
   },
   {
-     background: "url('/images/Cascada.jpg')",
+     background: "url('../images/Cascada.jpg')",
      nombreProducto: "Cascada",
      descripcionProducto: "Decorada con flores en colores pastel en forma de cascada. Sabores y cantidad de pisos personalizados."
      //7
   },
   {
-     background: "url('/images/Elegante.jpg')",
+     background: "url('../images/Elegante.jpg')",
      nombreProducto: "Elegante",
      descripcionProducto: "Cubierta con fondant blanco, filigranas, perlas y flores. Sabores y cantidad de pisos personalizados."
      //4
   },
   {
-     background: "url('/images/Especial.jpg')",
+     background: "url('../images/Especial.jpg')",
      nombreProducto: "Especial",
      descripcionProducto: "Masa de naranja y romero con relleno de curd de naranja. Las láminas de oro la hacen una torta especial."
      //11
   },
   {
-     background: "url('/images/Marrocan.jpg')",
+     background: "url('../images/Marrocan.jpg')",
      nombreProducto: "Maroccan",
      descripcionProducto: "Decorado con fondant calado con patrones marroquies y rosas Blush. Paleta de colores personalizada."
      //9
   },
   {
-     background: "url('/images/Naked.jpg')",
+     background: "url('../images/Naked.jpg')",
      nombreProducto: "Naked",
      descripcionProducto: "Posee un leve recubrimiento de buttercream y flores naturales. Sabores y cantidad de pisos personalizados."
      //5
   },
   {
-     background: "url('/images/Playera.jpg')",
+     background: "url('../images/Playera.jpg')",
      nombreProducto: "Playera",
      descripcionProducto: "Para novios relajados que lo único que quieren es estar bajo el sol. Ideal para una boda en la playa."
      //12
   },
   {
-     background: "url('/images/Pure-white.jpg')",
+     background: "url('../images/Pure-white.jpg')",
      nombreProducto: "Pure white",
      descripcionProducto: "Cubierta con fondant, filigranas y flores blancas. Sabores y cantidad de pisos personalizados."
      //6
@@ -53,49 +53,49 @@ let boda = [
 
 let cookies = [
   {
-     background: "url('/images/Avenas_y_pasas.jpg')",
+     background: "url('../images/Avenas_y_pasas.jpg')",
      nombreProducto: "Avena y pasas",
      descripcionProducto: "Con azúcar mascabo. Un gustito para los que prefieren algo menos empalagoso y un poquito más sano."
      //6
   },
   {
-     background: "url('/images/cookies-1.jpg')",
+     background: "url('../images/cookies-1.jpg')",
      nombreProducto: "Choco Chunks",
      descripcionProducto: "Las clásicas que los chocolatosos amamos. Con chocolate amargo o con leche de primera calidad."
      //1
   },
   {
-     background: "url('/images/Cookies_rellenas.jpg')",
+     background: "url('../images/Cookies_rellenas.jpg')",
      nombreProducto: "Cookies rellenas",
      descripcionProducto: "Rellenas de dulce de leche, crema condensada o ganache de chocolate blanco, con leche o negro."
      //5
   },
   {
-     background: "url('/images/Crinkle_cookies.jpg')",
+     background: "url('../images/Crinkle_cookies.jpg')",
      nombreProducto: "Crinkle Cookies",
      descripcionProducto: "Antes de cocinarlas las recubrimos en azúcar impalpable y dejamos que el horno haga su magia."
      //3
   },
   {
-     background: "url('/images/Delicias_de_miel.jpg')",
+     background: "url('../images/Delicias_de_miel.jpg')",
      nombreProducto: "Delicias de Miel",
      descripcionProducto: "Estas galletitas poseen una textura y un sabor sutil. Ideales para la hora del té o después del almuerzo."
      //4
   },
   {
-     background: "url('/images/Lavanda.jpg')",
+     background: "url('../images/Lavanda.jpg')",
      nombreProducto: "Lavanda",
      descripcionProducto: "Su leve sabor a lavanda le otorga a estas cookies una delicadeza especial y una sensación única al paladar."
      //7
   },
   {
-     background: "url('/images/Romero_y_almendras.jpg')",
+     background: "url('../images/Romero_y_almendras.jpg')",
      nombreProducto: "Romero",
      descripcionProducto: "Un sabor distinto solo apto para los que estan dispuestos a probar cosas nuevas. Te animás?"
      //8
   },
   {
-     background: "url('/images/Box_surtido.jpg')",
+     background: "url('../images/Box_surtido.jpg')",
      nombreProducto: "Box surtido",
      descripcionProducto: "Un surtido de nuestras cookies más vendidas. También la podés armar con tus preferidas. Vos decidís!"
      //2
@@ -104,49 +104,49 @@ let cookies = [
 
 let cupcakes = [
   {
-     background: "url('/images/Arcoiris.jpg')",
+     background: "url('../images/Arcoiris.jpg')",
      nombreProducto: "Arcoiris",
      descripcionProducto: "Estos cupcakes con frosting de vainilla de colores le aportan un toque de color a tu mesa. Sabor personalizado."
      //6
   },
   {
-     background: "url('/images/Caramelo_salado.jpg')",
+     background: "url('../images/Caramelo_salado.jpg')",
      nombreProducto: "Caramelo salado",
      descripcionProducto: "Rellenos con un corazon de caramelo salado, buttercream de caramelo y bañados con una salsa de caramelo."
      //8
   },
   {
-     background: "url('/images/Choco_avellanas.jpg')",
+     background: "url('../images/Choco_avellanas.jpg')",
      nombreProducto: "Choco-avellanas",
      descripcionProducto: "Decadente y chocolatoso. Con bombones y frutos secos picados para una textura especial."
      //3
   },
   {
-     background: "url('/images/Florales.jpg')",
+     background: "url('../images/Florales.jpg')",
      nombreProducto: "Florales",
      descripcionProducto: "Masa de chocolate. Personalizados con tu flor favorita. Son tan lindos que no te los vas a querer comer!"
      //7
   },
   {
-     background: "url('/images/Frutillas_y_choco.jpg')",
+     background: "url('../images/Frutillas_y_choco.jpg')",
      nombreProducto: "Frutillas y choco",
      descripcionProducto: "Fresco, suave y esponjoso. Con buttercream de frutillas y una frutilla fresca bañadas en chocolate blanco."
      //1
   },
   {
-     background: "url('/images/Red_velvet.jpg')",
+     background: "url('../images/Red_velvet.jpg')",
      nombreProducto: "Red Velvet",
      descripcionProducto: "Su color rojo los hace llamativos, y su frosting de queso crema los hace deliciosos!"
      //4
   },
   {
-     background: "url('/images/Selva_negra.jpg')",
+     background: "url('../images/Selva_negra.jpg')",
      nombreProducto: "Selva negra",
      descripcionProducto: "La clásica torta en tamaño chico. Rellenos con una crema con cerezas y un toque de Kirsch."
      //5
   },
   {
-     background: "url('/images/Sorpresa.jpg')",
+     background: "url('../images/Sorpresa.jpg')",
      nombreProducto: "Sorpresa",
      descripcionProducto: "La cereza y su centro con confites le dan un toque divertido que a los chicos les encanta."
      //2
@@ -155,49 +155,49 @@ let cupcakes = [
 
 let infantiles = [
   {
-     background: "url('/images/Animales.jpg')",
+     background: "url('../images/Animales.jpg')",
      nombreProducto: "Animales",
      descripcionProducto: "Podemos hacer sus animales favoritos. Temática y paleta de colores completamente personalizada."
      //6
   },
   {
-     background: "url('/images/CakePops.jpg')",
+     background: "url('../images/CakePops.jpg')",
      nombreProducto: "CakePops",
      descripcionProducto: "Mini tortas en palito cubiertas de chocolate. Pueden ser de colores lisos o con las caritas de sus personajes favoritos."
      //11
   },
   {
-     background: "url('/images/Castillo.jpg')",
+     background: "url('../images/Castillo.jpg')",
      nombreProducto: "Castillo",
      descripcionProducto: "De princesas o guerreros. Temática, sabor y paleta de colores completamente personalizada."
      //4
   },
   {
-     background: "url('/images/Dragones.jpg')",
+     background: "url('../images/Dragones.jpg')",
      nombreProducto: "Dragones",
      descripcionProducto: "Animales fantásticos. Se puede realizar con o sin cuernos. Paleta de colores completamente personalizada."
      //8
   },
   {
-     background: "url('/images/Dulces.jpg')",
+     background: "url('../images/Dulces.jpg')",
      nombreProducto: "Dulces",
      descripcionProducto: "Dulces armados artesanalmente por nuestro maestro especialista en azúcar. Paleta de colores personalizada."
      //12
   },
   {
-     background: "url('/images/Funfetti.jpg')",
+     background: "url('../images/Funfetti.jpg')",
      nombreProducto: "Funfetti",
      descripcionProducto: "Masa de vainilla con sprinkles de colores. Cubierta con frosting. Paleta de colores personalizada."
      //2
   },
   {
-     background: "url('/images/Personajes.jpg')",
+     background: "url('../images/Personajes.jpg')",
      nombreProducto: "Personajes",
      descripcionProducto: "Torta redonda o cuadrada con la cara de su personaje animado favorito. Sabor y tamaño personalizado." 
      //9
   },
   {
-     background: "url('/images/Rococó.jpg')",
+     background: "url('../images/Rococó.jpg')",
      nombreProducto: "Rococó",
      descripcionProducto: "Para los más chiquitos de la familia. Temática y paleta de colores completamente personalizada."
      //10
@@ -206,49 +206,49 @@ let infantiles = [
 
 let macarons = [
   {
-     background: "url('/images/Chocolat.jpg')",
+     background: "url('../images/Chocolat.jpg')",
      nombreProducto: "Chocolat",
      descripcionProducto: "Masa a base de almendras y chocolate con relleno de ganache de chocolate amargo. Deliciosos!"
      //3
   },
   {
-     background: "url('/images/De_estacion.jpg')",
+     background: "url('../images/De_estacion.jpg')",
      nombreProducto: "De estación",
      descripcionProducto: "Constantemente renovamos nuestro menú usando productos frescos de cada estación. Consultános!"
      //2
   },
   {
-     background: "url('/images/Dulce_arandano.jpg')",
+     background: "url('../images/Dulce_arandano.jpg')",
      nombreProducto: "Dulce arandano",
      descripcionProducto: "Relleno de ganache de chocolate blanco y puré natural de arándanos. Son nuestros favoritos!"
      //4
   },
   {
-     background: "url('/images/Dulce_de_leche.jpg')",
+     background: "url('../images/Dulce_de_leche.jpg')",
      nombreProducto: "Dulce de leche",
      descripcionProducto: "Una fusión entre Argentina y Francia: la delicadeza de los macarons con el sabor del dulce de leche."
      //9
   },
   {
-     background: "url('/images/Mini.jpg')",
+     background: "url('../images/Mini.jpg')",
      nombreProducto: "Mini macarons",
      descripcionProducto: "Todas nuestras variedades se pueden hacer minis. Pedidos por anticipado. Cantidad mínima: 12 unidades."
      //7
   },
   {
-     background: "url('/images/Pistacho.jpg')",
+     background: "url('../images/Pistacho.jpg')",
      nombreProducto: "Pistacho",
      descripcionProducto: "El pistacho es uno de los frutos secos más apreciados y son los que le dan el color a los macarons."
      //5
   },
   {
-     background: "url('/images/Rosa_mosqueta.jpg')",
+     background: "url('../images/Rosa_mosqueta.jpg')",
      nombreProducto: "Rosa mosqueta",
      descripcionProducto: "Un clásico de neustra Patagonia. El dulce de rosa mosqueta les otorga un sabor único."
         //10
   },
   {
-     background: "url('/images/Macarons_box.jpg')",
+     background: "url('../images/Macarons_box.jpg')",
      nombreProducto: "Box de regalo",
      descripcionProducto: "Un surtido de nuestros macarons más vendidas o la podés armar con tus preferidos. Vos decidís!"
      //6
@@ -257,49 +257,49 @@ let macarons = [
 
 let postres = [
   {
-     background: "url('/images/Crème_Brûlée.jpg')",
+     background: "url('../images/Crème_Brûlée.jpg')",
      nombreProducto: "Crème Brûlée",
      descripcionProducto: "Natilla con huevo y sabor vainilla con una fina capa de caramelo crujiente en su superficie."
      //9
   },
   {
-     background: "url('/images/Cheesecake.jpg')",
+     background: "url('../images/Cheesecake.jpg')",
      nombreProducto: "Cheesecake",
      descripcionProducto: "Tradicional. Base de galletitas molidas, crema de queso mascarpone y decorado con frutas frescas de estación."
      //4
   },
   {
-     background: "url('/images/Cheesecake_ddl.jpg')",
+     background: "url('../images/Cheesecake_ddl.jpg')",
      nombreProducto: "Cheesecake ddl",
      descripcionProducto: "Cheesecake de dulce de leche cubierto con una salsa de dulce de leche y decoraciones de chocolate."
      //2
   },
   {
-     background: "url('/images/Merenguitos.jpg')",
+     background: "url('../images/Merenguitos.jpg')",
      nombreProducto: "Merenguitos",
      descripcionProducto: "Bocaditos azucarados ideales para darse un gustito en la hora del té. Sabor y paleta de colores personalizada."
      //6
   },
   {
-     background: "url('/images/Mousse.jpg')",
+     background: "url('../images/Mousse.jpg')",
      nombreProducto: "Mousse",
      descripcionProducto: "Torta mousse de tres chocolates: blanco, con leche y amargo cubierta con ganache de chocolate."
      //8
   },
   {
-     background: "url('/images/Pâte_à_choux.jpg')",
+     background: "url('../images/Pâte_à_choux.jpg')",
      nombreProducto: "Pâte à choux",
      descripcionProducto: "Rellenas con una crema de avellanas y chocolate y decoradas con filamentos de chocolate."
      //3
   },
   {
-     background: "url('/images/postres-7.jpg')",
+     background: "url('../images/postres-7.jpg')",
      nombreProducto: "Pavlova",
      descripcionProducto: "Merengue, crema, frutos secos y frutas frescas de estación. Dulce, crocante y cremoso. ¿Qué más se puede pedir?"
      //7
   },
   {
-     background: "url('/images/postres-1.jpg')",
+     background: "url('../images/postres-1.jpg')",
      nombreProducto: "Tiramisú",
      descripcionProducto: "Nuestra versión de un clásico italiano. Tamaño personalizado en función de las porciones que necesites."
      //1
@@ -308,44 +308,44 @@ let postres = [
 
 let tartas = [
 {
-  background: "url('/images/Frutos_secos.jpg')",
+  background: "url('../images/Frutos_secos.jpg')",
   nombreProducto: "Frutos secos",
   descripcionProducto: "Masa sablée con relleno de frutos secos picados y caramelo. Dulce, crocante y elegante." //8
 },
 {
-  background: "url('/images/Frutos_rojos.jpg')",
+  background: "url('../images/Frutos_rojos.jpg')",
   nombreProducto: "Frutos rojos",
   descripcionProducto: "Masa sablée de vainilla, relleno de crema diplomata, frutos rojos frescos y un copo de crema chantilly. De estación." //7
 },
 {
-  background: "url('/images/Lemon_pie.jpg')",
+  background: "url('../images/Lemon_pie.jpg')",
   nombreProducto: "Lemon pie",
   descripcionProducto: "Relleno de curd de limón recubierto con merengue italiano levemente quemado. Balance perfecto." //4
 },
 {
-  background: "url('/images/Bombón.jpg')",
+  background: "url('../images/Bombón.jpg')",
   nombreProducto: "Bombón",
   descripcionProducto: "Masa sablée de chocolate, mucho dulce de leche y ganache de chocolate. ¡Una verdadera bomba!" //5
 },
 {
-  background: "url('/images/Pastafrola.jpg')",
+  background: "url('../images/Pastafrola.jpg')",
   nombreProducto: "Pastafrola",
   descripcionProducto: "Un clásico con un toque especial. Relleno de dulce de frambuezas casero preparado a partir de fruta fresca." //7
 },
 {
-  background: "url('/images/Naranjas.jpg')",
+  background: "url('../images/Naranjas.jpg')",
   nombreProducto: "Naranjas",
   descripcionProducto: "Tarta rústica de frangipane y naranjas caramelizadas. Un sabor distinto al que estamos acostumbrados."
   //9
 
 },
 {
-  background: "url('/images/Naranjas_y_moras.jpg')",
+  background: "url('../images/Naranjas_y_moras.jpg')",
   nombreProducto: "Naranja y mora",
   descripcionProducto: "Base de avena y frutos secos. Relleno de crema de naranjas. Se puede realizar en tamaño mediano o grande." //2
 },
 {
-  background: "url('/images/Minis.jpg')",
+  background: "url('../images/Minis.jpg')",
   nombreProducto: "Minis",
   descripcionProducto: "Mini tartas de crema y frutas de estación. Ideales para un festejo. Variedades personalizadas." //3
 }
@@ -353,42 +353,42 @@ let tartas = [
 
 let tortas = [
 {
-  background: "url('/images/Floral.jpg')",
+  background: "url('../images/Floral.jpg')",
   nombreProducto: "Floral",
   descripcionProducto: "Un único piso con decoración de flores naturales. Sencilla y elegante. Paleta de colores personalizada." //4
 },
 {
-  background: "url('/images/Higos_y_pistachos.jpg')",
+  background: "url('../images/Higos_y_pistachos.jpg')",
   nombreProducto: "Higos y pistacho",
   descripcionProducto: "Sí, higos! Solo disponible en época de cosecha. Los pistachos le da un toque crocante." //6
 },
 {
-  background: "url('/images/Limon.jpg')",
+  background: "url('../images/Limon.jpg')",
   nombreProducto: "Limón y más limón",
   descripcionProducto: "Te gusta el limón? Entonces está torta es para vos. Masa, relleno, buttercream y macarons de limón." //3
 },
 {
-  background: "url('/images/Macarons.jpg')",
+  background: "url('../images/Macarons.jpg')",
   nombreProducto: "Macarons",
   descripcionProducto: "Masa preparada con harina de almendras y decorada con macarons. Paleta de colores personalizada." //1
 },
 {
-  background: "url('/images/Pochoclos.jpg')",
+  background: "url('../images/Pochoclos.jpg')",
   nombreProducto: "Pochoclos",
   descripcionProducto: "Sí, leiste bien: ¡pochoclos acaramelados! No solo en la decoración, sino que también en el relleno." //7
 },
 {
-  background: "url('/images/Romántica.jpg')",
+  background: "url('../images/Romántica.jpg')",
   nombreProducto: "Romántica",
   descripcionProducto: "Dos o tres pisos. Flores de buttercream hechas a mano. Sabores a elección. Paleta de colores personalizada." //5
 },
 {
-  background: "url('/images/Rústica.jpg')",
+  background: "url('../images/Rústica.jpg')",
   nombreProducto: "Rústica",
   descripcionProducto: "Para los que les gustan las cosas dulces, pero no taaan dulces. Masa de vainilla o chocolate con frutas." //8
 },
 {
-  background: "url('/images/Tres-chocolates.jpg')",
+  background: "url('../images/Tres-chocolates.jpg')",
   nombreProducto: "Tres chocolates",
   descripcionProducto: "Masa de chocolate blanco con trozos de chocolate amargo y relleno de mousse de chocolate con leche." //2
 }

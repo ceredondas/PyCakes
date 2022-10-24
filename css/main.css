@@ -518,7 +518,7 @@ footer hr {
 @media screen and (min-width: 450px){
 
   .hero {
-    background-position: center 90px;
+    background-position: center;
   }
 
   .hero-text {
@@ -573,10 +573,6 @@ footer hr {
 
   .menu {
     display: none;
-  }
-
-  .hero {
-    background-position: center;
   }
 
   .hero-text{
