@@ -95,7 +95,9 @@ body{
 .slider .wrapper .left > div p{
   color: #555;
   font-size: 30px;
-  /* height: 30%; */
+  font-size: 25px;
+  line-height: 140%;
+  text-align:justify;
 }
 .slider .wrapper .right > div img{
   width: 100%;
@@ -104,6 +106,12 @@ body{
 }
 .slider .wrapper .right div:nth-child(1){
   margin-top: -400vh;
+}
+
+#algoDeNosotros{
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 100%;
 }
 
 /* Frases de api */
@@ -126,11 +134,7 @@ body{
   text-align: center;
 }
 
-#algoDeNosotros{
-  font-size: 20px;
-  margin-bottom: 10px;
-  line-height: 100%;
-}
+
 
 
 
