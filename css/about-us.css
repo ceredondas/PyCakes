@@ -16,9 +16,6 @@
   box-sizing: content-box;     
 }
 
-html{
-  width: 100vw;
-}
 
 body{
   background-color:var(--background-color);
@@ -69,7 +66,7 @@ body{
   height: 100%;
   display: flex;
   line-height: 45px;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .slider .wrapper .left,
