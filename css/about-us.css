@@ -16,7 +16,6 @@
   box-sizing: content-box;     
 }
 
-
 body{
   background-color:var(--background-color);
   font-family: var(--font-text);
@@ -95,8 +94,10 @@ body{
 /* Maneja el lado slider izquierdo */
 .slider .wrapper .left > div p{
   color: #555;
-  font-size: 20px;
-  /* height: 30%; */
+  font-size: 30px;
+  font-size: 25px;
+  line-height: 140%;
+  text-align:justify;
 }
 .slider .wrapper .right > div img{
   width: 100%;
@@ -105,6 +106,12 @@ body{
 }
 .slider .wrapper .right div:nth-child(1){
   margin-top: -400vh;
+}
+
+#algoDeNosotros{
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 100%;
 }
 
 /* Frases de api */
@@ -126,6 +133,11 @@ body{
   line-height: 15px;
   text-align: center;
 }
+
+
+
+
+
 
 /* HACER TODO RESPONSIVE */
 @media screen and (max-width: 1200px){
@@ -167,7 +179,7 @@ body{
   .slider .wrapper .left > div p{
     font-size: 20px;
     margin-bottom: 10px;
-    line-height: 50px;
+    line-height: 130%;
     
     /* height: 30%; */
   }
