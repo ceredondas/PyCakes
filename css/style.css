@@ -48,9 +48,11 @@
 .intro img {
    position: absolute;
    opacity: 0.8;
-   width: 50%;
+   max-width: 390px;
+  min-width: 60% ;
    height: 30rem;
    padding: 8vw 0vw 0vw 2vw;
+   size: 800px;
 }
 
 .intro-text {
@@ -60,7 +62,8 @@
    padding: 6vw;
    text-align: left;
    position: relative;
-   width: 50%;
+   max-width: 60%;
+   min-width: 390px ;
 }
 
 .intro-text .h1 {
@@ -68,6 +71,7 @@
    font-size: var(--font-size-title);
    line-height: 3.5rem;
    padding-top: 1rem;
+   text-align: center;
 }
 
 .intro-text p {
@@ -110,6 +114,9 @@
    margin: 0.5rem 0;
    margin-bottom: 1.5rem;
    font-size: 1rem;
+   max-width:400px;
+  min-width: 60% ;
+  align-items: center;
 }
 .select,
 option {
