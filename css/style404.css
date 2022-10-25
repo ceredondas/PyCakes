@@ -1,13 +1,45 @@
 /* ---------------------FLAVIA MICAELA SANDOVAL--------------------- */
 
-.container{
-     align-items: center;
-     align-self: center;
-     align-content: center;
-     text-align: center;
-     background-color:  #e8e5d4;
-     
+.container {
+   display: grid;
+   grid-template-areas:
+      "header"
+      "main"
+      "footer";
+   align-items: center;
+   align-self: center;
+   align-content: center;
+   text-align: center;
+   background-color: #e8e5d4;
 }
-.volver{
-     padding: 3rem;
+header {
+   grid-area: header;
+}
+
+main {
+   grid-area: main;
+}
+
+.volver {
+   margin-top: var(--header-height);
+   height: 90vh;
+}
+
+.volver img {
+   width: 100%;
+   margin-top: 50px;
+}
+
+footer {
+   grid-area: footer;
+}
+
+@media screen and (min-width: 800px) {
+   .volver {
+      height: 90vh;
+   }
+   .volver img {
+      margin-top: 50px;
+      width: auto;
+   }
 }

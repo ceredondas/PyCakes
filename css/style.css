@@ -49,7 +49,7 @@
    position: absolute;
    opacity: 0.8;
    max-width: 390px;
-  min-width: 60% ;
+   min-width: 60% ;
    height: 30rem;
    padding: 8vw 0vw 0vw 2vw;
    size: 800px;
@@ -57,7 +57,7 @@
 
 .intro-text {
    color: var(--color-accent);
-   margin-top: 3vw;
+   margin-top: 85px;
    margin-right: 35vw;
    padding: 6vw;
    text-align: left;

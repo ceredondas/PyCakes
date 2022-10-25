@@ -337,7 +337,6 @@ let tartas = [
   nombreProducto: "Naranjas",
   descripcionProducto: "Tarta rústica de frangipane y naranjas caramelizadas. Un sabor distinto al que estamos acostumbrados."
   //9
-
 },
 {
   background: "url('./images/Naranjas_y_moras.jpg')",

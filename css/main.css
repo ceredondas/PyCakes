@@ -99,7 +99,6 @@ header {
 
 .logo {
    width: 125px;
-   padding: 1rem 0;
 }
 
 .logo img {
@@ -220,6 +219,12 @@ nav a:active {
 
    margin: 2rem 0;
    padding: 0.75rem 1rem;
+}
+
+.hero-btn:active{
+   background-color: #9d4492;
+
+   color: var(--font-color-light);
 }
 
 /* ---------------------------------------FINAL HERO--------------------------------------- */
@@ -549,17 +554,20 @@ footer hr {
   .cardAndImage {
   max-width: 420px;
   }
+}
 
-  .footer-top{
-    padding-inline: var(--padding-small);
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .footer-ul{
-    text-align: right;
-  }
+@media screen and (min-width:600px){
+   .footer-top{
+      padding-inline: var(--padding-small);
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .footer-ul{
+      text-align: left;
+      align-items: flex-end;
+    }
 }
  
   @media screen and (min-width: 760px) {
@@ -1068,11 +1076,6 @@ footer hr {
    .footer-logo img {
       width: 200px;
       height: 200px;
-   }
-
-   .footer-ul {
-      text-align: left;
-      align-items: flex-end;
    }
 
    .horario {
