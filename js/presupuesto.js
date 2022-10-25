@@ -1,26 +1,27 @@
 //---------------------FLAVIA MICAELA SANDOVAL---------------------
 document.getElementById('formulario').onclick = function () {
-    var suma = 0;
+    let suma = 0;
+    let presupuesto =0;
 
-    var level = document.getElementById("level");
-    var value = level.options[level.selectedIndex].value;
-    var nivel = parseFloat(value);
+    let level = document.getElementById("level");
+    let value = level.options[level.selectedIndex].value;
+    let nivel = parseFloat(value);
 
-    var size = document.getElementById("size");
+    let size = document.getElementById("size");
     value = size.options[size.selectedIndex].value;
-    var tamaño= parseFloat(value);
+    let tamaño= parseFloat(value);
 
-    var sabor = document.getElementById("sabor");
+    let sabor = document.getElementById("sabor");
     value = sabor.options[sabor.selectedIndex].value;
-    var gusto= parseFloat(value);
+    let gusto= parseFloat(value);
 
-    var cobertura = document.getElementById("cobertura");
+    let cobertura = document.getElementById("cobertura");
     value = cobertura.options[cobertura.selectedIndex].value;
-    var cobert= parseFloat(value);
+    let cobert= parseFloat(value);
 
-    var deco = document.getElementById("deco");
+    let deco = document.getElementById("deco");
     value = deco.options[deco.selectedIndex].value;
-    var decoracion= parseFloat(value);
+    let decoracion= parseFloat(value);
     
     
 
